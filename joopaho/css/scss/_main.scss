@@ -1,0 +1,11 @@
+$color: red;
+
+.fullpage {
+    section {@include vw-pc(height, 400); @include vw-pc(font-size, 30); color: $color;}
+}
+
+@media screen and (max-width: 768px) {
+    .fullpage {
+        section {@include vw-mo(height, 400); @include vw-mo(font-size, 30);}
+    }
+}

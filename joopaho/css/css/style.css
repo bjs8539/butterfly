@@ -1,0 +1,16 @@
+.fullpage section {
+  font-size: 30px;
+  color: red;
+}
+@media screen and (max-width: 1440px) {
+  .fullpage section {
+    font-size: 2.0833333333vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fullpage section {
+    font-size: 30px;
+    font-size: 4.1666666667vw;
+  }
+}/*# sourceMappingURL=style.css.map */
