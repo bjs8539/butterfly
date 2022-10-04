@@ -1,11 +1,32 @@
-$color: red;
-
-.fullpage {
-    section {@include vw-pc(height, 400); @include vw-pc(font-size, 30); color: $color;}
+.joopago {
+    .sec_kv {
+        .inner_1920 {
+            .txt_box {
+                position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; color: #fff; width: 100%; text-align: center;
+                .img_box {@include vw-pc(width, 798); @include vw-pc(margin, 0 auto 67);}
+                .pre_txt {@include vw-pc(font-size, 33); @include vw-pc(line-height, 33); @include vw-pc(letter-spacing, -1.5);}
+            }
+        }
+    }
+    // sec_kv
+    
+    .sec_info {
+        @include vw-pc(padding, 100 0);
+        .inner_1440 {
+            @include vw-pc(width, 1048);
+            .main_txt {@include vw-pc(font-size, 33);@include vw-pc(line-height, 43); text-align: center; @include vw-pc(margin-bottom, 50); font-weight: 700;}
+            .content_box {
+                ul {display: flex; align-items: center; justify-content: space-between; padding: 0}
+                ul li {@include vw-pc(width, 244); @include vw-pc(height, 244);@include vw-pc(border-radius, 280); @include vw-pc(border, 1 solid #fed3d3);text-align: center; display: flex; flex-direction: column; justify-content: center;} 
+                ul li .img_box {@include vw-pc(width, 68); @include vw-pc(margin, 0 auto);}
+                ul li .add_txt{@include vw-pc(font-size, 14); @include vw-pc(line-height, 18); color: #500407;}
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .fullpage {
-        section {@include vw-mo(height, 400); @include vw-mo(font-size, 30);}
+    .joopago {
+        
     }
 }
