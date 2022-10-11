@@ -1,36 +1,79 @@
 .joopago {
     .sec_kv {
         .inner_1920 {
-            .txt_box {
+            .title_box {
                 position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; color: #fff; width: 100%; text-align: center;
-                .img_box {@include vw-pc(width, 798); @include vw-pc(margin, 0 auto 67);}
-                .pre_txt {@include vw-pc(font-size, 33); @include vw-pc(line-height, 33); @include vw-pc(letter-spacing, -1.5);}
+                > .img_box {@include vw-pc(width, 798); @include vw-pc(margin, 0 auto 50);}
+                .pre_txt {@include vw-pc(font-size, 35); @include vw-pc(line-height, 35); @include vw-pc(letter-spacing, -1.5); opacity: 0.8; @include vw-pc(margin-bottom, 100);}
+                .add_txt {@include vw-pc(font-size, 34); @include vw-pc(line-height, 39); opacity: 0.8;@include vw-pc(margin-bottom, 100);}
+                .ico_box {
+                    display: flex; justify-content: center;
+                    .img_box {@include vw-pc(width, 202); @include vw-pc(margin-right, 18);}
+                    .img_box:last-child {margin-right: 0}
+                }
             }
         }
     }
     // sec_kv
-    
-    .sec_info {
-        @include vw-pc(padding, 100 0);
+
+
+    .sec_banner {
+        .main_txt {@include vw-pc(font-size, 60); @include vw-pc(line-height, 85); color: #251d12; position: absolute; top: 26%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400;}
+        .main_txt::after{ content: "";position: absolute; background-image: url(../../img/joo_banner_under_pc.png); background-repeat: no-repeat; @include vw-pc(background-size, 497 12); @include vw-pc(width, 497); @include vw-pc(line-height, 12); top: 95%; left: 50%; transform: translateX(-50%); @include vw-pc(height, 12);}
+    }
+    // sec_banner
+
+    .sec_youtube {
+        background-image: url(../../img/joo_youtube_bg_pc.jpg);background-repeat: no-repeat; @include vw-pc(background-size, 1920 1799);@include vw-pc(max-width, 1920); @include vw-pc(height, 1799);@include vw-pc(padding, 90 0);
         .inner_1440 {
             @include vw-pc(width, 1048);
-            .main_txt {@include vw-pc(font-size, 33);@include vw-pc(line-height, 43); text-align: center; @include vw-pc(margin-bottom, 50); font-weight: 700;}
-            .content_box {
-                ul {display: flex; align-items: center; justify-content: space-between; padding: 0}
-                ul li {@include vw-pc(width, 244); @include vw-pc(height, 244);@include vw-pc(border-radius, 280); @include vw-pc(border, 1 solid #fed3d3);text-align: center; display: flex; flex-direction: column; justify-content: center;} 
-                ul li .img_box {@include vw-pc(width, 68); @include vw-pc(margin, 0 auto);}
-                ul li .add_txt{@include vw-pc(font-size, 14); @include vw-pc(line-height, 18); color: #500407;}
+            .content_list {
+                @include vw-pc(margin-bottom, 130);
+                .title_box {
+                    text-align: center;
+                    .img_box {@include vw-pc(width, 109); display: inline-block}
+                    .main_txt {@include vw-pc(font-size, 55); color: #fff; @include vw-pc(margin, 10 0 50);}
+                }
+                .content_box {
+                    iframe {@include vw-pc(width, 1048); @include vw-pc(height, 593);}
+                }
+            }
+            .content_list:last-child{margin-bottom: 0;}    
+            .content_list:nth-child(2) .title_box .img_box {@include vw-pc(width, 50);}    
+        }
+    }
+    // sec_youtube
+
+    .sec_footer {
+        background-color: #292929;
+        .inner_1440 {
+            display: flex; align-items: center; justify-content: center;@include vw-pc(width, 1048); @include vw-pc(height, 90);
+            .logo_box {
+                @include vw-pc(margin-right, 55);
+                .img_box {@include vw-pc(width, 126);}
+            }
+            .info_box {
+                display: flex; align-content: center; @include vw-pc(margin-right, 14);
+                p {@include vw-pc(font-size, 20);color: #fff; @include vw-pc(line-height, 46);  @include vw-pc(margin, 0 18 0 0);}
+                input {@include vw-pc(height, 46); @include vw-pc(width, 120); @include vw-pc(border-radius, 10); @include vw-pc(padding-left, 20);}
+            }
+            .info_box.name_box {@include vw-pc(margin-right, 40);}
+            .info_box.phone_box input {@include vw-pc(width, 180);}
+            .check_box {
+                @include vw-pc(margin-right, 18);
+                .agree_check {
+                    input {}
+                    a {color: #fff; @include vw-pc(font-size, 16); @include vw-pc(line-height, 24);}
+                }
+            } 
+            .btn_box {
+                .apply_btn {color: #fff; background-color: #46f98f; @include vw-pc(width, 190); @include vw-pc(height, 46); @include vw-pc(border-radius, 10); @include vw-pc(font-size, 17); @include vw-pc(line-height, 24); display: flex; align-items: center; justify-content: center;}
             }
         }
     }
-
-    .sec_banner {
-        .main_txt {@include vw-max(font-size, 52); @include vw-max(line-height, 67); color: #fff; position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
-    }
-    // sec_banner
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (pc-width: 768px) {
     .joopago {
         
     }

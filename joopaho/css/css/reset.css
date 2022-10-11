@@ -28,7 +28,7 @@ body {padding: 0; margin: 0;}
 .m_hide{display:block !important;}
 .m_show{display:none !important;}
 
-.sec_project_wrap{min-width:320px; margin:0 auto; font-family:'Noto Sans CJK KR'; line-height: 1;}
+.sec_project_wrap{min-width:320px; margin:0 auto; font-family:'NanumSquareOTFR'; line-height: 1;}
 
 .sec_project_wrap,
 .sec_project_wrap article,
