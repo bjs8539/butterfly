@@ -23,6 +23,11 @@
             }
         }
     }
+
+    .sec_banner {
+        .main_txt {@include vw-max(font-size, 52); @include vw-max(line-height, 67); color: #fff; position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
+    }
+    // sec_banner
 }
 
 @media screen and (max-width: 768px) {

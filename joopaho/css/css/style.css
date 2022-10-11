@@ -143,4 +143,24 @@
   .joopago .sec_info .inner_1440 .content_box ul li .add_txt {
     line-height: 1.25vw;
   }
+}
+.joopago .sec_banner .main_txt {
+  font-size: 52px;
+  line-height: 67px;
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media screen and (max-width: 1920px) {
+  .joopago .sec_banner .main_txt {
+    font-size: 2.7083333333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .joopago .sec_banner .main_txt {
+    line-height: 3.4895833333vw;
+  }
 }/*# sourceMappingURL=style.css.map */
