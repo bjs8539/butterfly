@@ -3,6 +3,20 @@
     var $window = $(window);
     var $wrap = $('.sec_project_wrap');
 
+    $(window).resize(function(){ 
+        var $secFootet = $('.sec_footer');
+        var $moFootet = $('.mo_footer');
+
+
+        if (window.innerWidth < 768) {  // 다바이스 크기가 768이하 일때 
+            $secFootet.remove();
+            $('.joopago').append($moFootet);
+        } else {
+            $('.joopago').append($secFootet);
+            $moFootet.remove();
+        } 
+        
+    }).resize(); 
 
     var mainIndex = {
 
@@ -91,9 +105,24 @@
                }
            });  
         },
+        footerBtn: function() {
+            var $openBtn = $('.open_btn');
+            var $closeBox = $('.close_box')
+
+            $openBtn.on('click', function(e) {
+                e.preventDefault();
+
+                $('.mo_footer .popup_box').slideDown();
+                $('.mo_footer .open_btn_box').hide();
+            });
+            $closeBox.on('click', function() {
+                $('.mo_footer .popup_box').slideUp();
+                $('.mo_footer .open_btn_box').delay(300).fadeIn();
+            });
+        },
         init: function() {
             this.applyBtn();
-            viewportChange(); // fold 해상도 대응
+            this.footerBtn();
         }
     };
 
