@@ -175,12 +175,12 @@
 
 html,
 body {
-  font-family: "Open Sans", "Noto Sans CJK KR", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
+  font-family: "Open Sans", "NanumSquare", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
   color: #000;
 }
 
 body {
-  font-family: "Open Sans", "Noto Sans CJK KR", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
+  font-family: "Open Sans", "NanumSquare", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
 }
 
 a:hover {
