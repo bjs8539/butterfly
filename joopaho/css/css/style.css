@@ -1,4 +1,4 @@
-.joopago .sec_kv .inner_1920 .title_box {
+.joopago .sec_kv .inner_max .title_box {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -7,21 +7,21 @@
   width: 100%;
   text-align: center;
 }
-.joopago .sec_kv .inner_1920 .title_box > .img_box {
+.joopago .sec_kv .inner_max .title_box > .img_box {
   width: 798px;
   margin: 0px auto 50px;
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box > .img_box {
+  .joopago .sec_kv .inner_max .title_box > .img_box {
     width: 41.5625vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box > .img_box {
+  .joopago .sec_kv .inner_max .title_box > .img_box {
     margin: 0vw auto 2.6041666667vw;
   }
 }
-.joopago .sec_kv .inner_1920 .title_box .pre_txt {
+.joopago .sec_kv .inner_max .title_box .pre_txt {
   font-size: 35px;
   line-height: 35px;
   letter-spacing: -1.5px;
@@ -29,73 +29,81 @@
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .pre_txt {
+  .joopago .sec_kv .inner_max .title_box .pre_txt {
     font-size: 1.8229166667vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .pre_txt {
+  .joopago .sec_kv .inner_max .title_box .pre_txt {
     line-height: 1.8229166667vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .pre_txt {
+  .joopago .sec_kv .inner_max .title_box .pre_txt {
     letter-spacing: -0.078125vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .pre_txt {
+  .joopago .sec_kv .inner_max .title_box .pre_txt {
     margin-bottom: 5.2083333333vw;
   }
 }
-.joopago .sec_kv .inner_1920 .title_box .add_txt {
+.joopago .sec_kv .inner_max .title_box .add_txt {
   font-size: 34px;
   line-height: 39px;
   opacity: 0.8;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .add_txt {
+  .joopago .sec_kv .inner_max .title_box .add_txt {
     font-size: 1.7708333333vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .add_txt {
+  .joopago .sec_kv .inner_max .title_box .add_txt {
     line-height: 2.03125vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .add_txt {
+  .joopago .sec_kv .inner_max .title_box .add_txt {
     margin-bottom: 5.2083333333vw;
   }
 }
-.joopago .sec_kv .inner_1920 .title_box .ico_box {
+.joopago .sec_kv .inner_max .title_box .ico_box {
   display: flex;
   justify-content: center;
 }
-.joopago .sec_kv .inner_1920 .title_box .ico_box .img_box {
+.joopago .sec_kv .inner_max .title_box .ico_box .img_box {
   width: 202px;
   margin-right: 18px;
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .ico_box .img_box {
+  .joopago .sec_kv .inner_max .title_box .ico_box .img_box {
     width: 10.5208333333vw;
   }
 }
 @media screen and (max-width: 1920px) {
-  .joopago .sec_kv .inner_1920 .title_box .ico_box .img_box {
+  .joopago .sec_kv .inner_max .title_box .ico_box .img_box {
     margin-right: 0.9375vw;
   }
 }
-.joopago .sec_kv .inner_1920 .title_box .ico_box .img_box:last-child {
+.joopago .sec_kv .inner_max .title_box .ico_box .img_box:last-child {
   margin-right: 0;
+}
+.joopago .sec_banner .inner_max {
+  height: 376px;
+}
+@media screen and (max-width: 1920px) {
+  .joopago .sec_banner .inner_max {
+    height: 19.5833333333vw;
+  }
 }
 .joopago .sec_banner .main_txt {
   font-size: 60px;
   line-height: 85px;
   color: #251d12;
   position: absolute;
-  top: 33%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -147,20 +155,10 @@
 .joopago .sec_youtube {
   background-image: url(../../img/joo_youtube_bg_pc.jpg);
   background-repeat: no-repeat;
-  background-size: 1920px 1900px;
-  max-width: 1920px;
+  background-size: 100%;
+  width: 100%;
   height: 1900px;
   padding: 90px 0px;
-}
-@media screen and (max-width: 1440px) {
-  .joopago .sec_youtube {
-    background-size: 133.3333333333vw 131.9444444444vw;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .joopago .sec_youtube {
-    max-width: 133.3333333333vw;
-  }
 }
 @media screen and (max-width: 1440px) {
   .joopago .sec_youtube {
@@ -427,7 +425,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .joopago .sec_kv .inner_1920 .title_box {
+  .joopago .sec_kv .inner_max .title_box {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -436,13 +434,13 @@
     width: 100%;
     text-align: center;
   }
-  .joopago .sec_kv .inner_1920 .title_box > .img_box {
+  .joopago .sec_kv .inner_max .title_box > .img_box {
     width: 612px;
     width: 85vw;
     margin: 0px auto 42px;
     margin: 0vw auto 5.8333333333vw;
   }
-  .joopago .sec_kv .inner_1920 .title_box .pre_txt {
+  .joopago .sec_kv .inner_max .title_box .pre_txt {
     font-size: 35px;
     font-size: 4.8611111111vw;
     line-height: 45px;
@@ -453,7 +451,7 @@
     margin-bottom: 30px;
     margin-bottom: 4.1666666667vw;
   }
-  .joopago .sec_kv .inner_1920 .title_box .add_txt {
+  .joopago .sec_kv .inner_max .title_box .add_txt {
     font-size: 24px;
     font-size: 3.3333333333vw;
     line-height: 34px;
@@ -462,18 +460,22 @@
     margin-bottom: 50px;
     margin-bottom: 6.9444444444vw;
   }
-  .joopago .sec_kv .inner_1920 .title_box .ico_box {
+  .joopago .sec_kv .inner_max .title_box .ico_box {
     display: flex;
     justify-content: center;
   }
-  .joopago .sec_kv .inner_1920 .title_box .ico_box .img_box {
+  .joopago .sec_kv .inner_max .title_box .ico_box .img_box {
     width: 148px;
     width: 20.5555555556vw;
     margin-right: 12px;
     margin-right: 1.6666666667vw;
   }
-  .joopago .sec_kv .inner_1920 .title_box .ico_box .img_box:last-child {
+  .joopago .sec_kv .inner_max .title_box .ico_box .img_box:last-child {
     margin-right: 0;
+  }
+  .joopago .sec_banner .inner_max {
+    height: 222px;
+    height: 30.8333333333vw;
   }
   .joopago .sec_banner .main_txt {
     font-size: 50px;

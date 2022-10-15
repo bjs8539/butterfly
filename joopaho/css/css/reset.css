@@ -57,11 +57,13 @@ body {padding: 0; margin: 0;}
 .sec_project_wrap .img_box{position:relative; width:100%; font-size:0;}
 .sec_project_wrap .img_box img{width:100%;}
 
+.sec_project_wrap .inner_max,
 .sec_project_wrap .inner_1920,
 .sec_project_wrap .inner_1440,
 .sec_project_wrap .inner_1280,
 .sec_project_wrap .inner_1200{position:relative; width: 100%; margin: 0 auto;}
 
+.sec_project_wrap .inner_max{max-width: 100%;}
 .sec_project_wrap .inner_1920{max-width: 1920px;}
 .sec_project_wrap .inner_1440{max-width: 1440px;}
 .sec_project_wrap .inner_1280{max-width: 1280px;}

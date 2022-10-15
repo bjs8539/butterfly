@@ -1,6 +1,6 @@
 .joopago {
     .sec_kv {
-        .inner_1920 {
+        .inner_max {
             .title_box {
                 position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; color: #fff; width: 100%; text-align: center;
                 > .img_box {@include vw-max(width, 798); @include vw-max(margin, 0 auto 50);}
@@ -18,13 +18,14 @@
 
 
     .sec_banner {
-        .main_txt {@include vw-max(font-size, 60); @include vw-max(line-height, 85); color: #251d12; position: absolute; top: 33%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400;}
+        .inner_max {@include vw-max(height, 376);}
+        .main_txt {@include vw-max(font-size, 60); @include vw-max(line-height, 85); color: #251d12; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400;}
         .main_txt::after{ content: "";position: absolute; background-image: url(../../img/joo_banner_under_pc.png); background-repeat: no-repeat; @include vw-max(background-size, 497 12); @include vw-max(width, 497); @include vw-max(line-height, 12); top: 95%; left: 50%; transform: translateX(-50%); @include vw-max(height, 12);}
     }
     // sec_banner
 
     .sec_youtube {
-        background-image: url(../../img/joo_youtube_bg_pc.jpg);background-repeat: no-repeat; @include vw-pc(background-size, 1920 1900);@include vw-pc(max-width, 1920); @include vw-pc(height, 1900);@include vw-pc(padding, 90 0);
+        background-image: url(../../img/joo_youtube_bg_pc.jpg);background-repeat: no-repeat; background-size: 100%; width: 100%; @include vw-pc(height, 1900);@include vw-pc(padding, 90 0);
         .inner_1440 {
             @include vw-pc(width, 1048);
             .content_list {
@@ -86,7 +87,7 @@
 @media screen and (max-width: 768px) {
     .joopago {
         .sec_kv {
-            .inner_1920 {
+            .inner_max {
                 .title_box {
                     position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; color: #fff; width: 100%; text-align: center;
                     > .img_box {@include vw-mo(width, 612); @include vw-mo(margin, 0 auto 42);}
@@ -104,6 +105,7 @@
     
     
         .sec_banner {
+            .inner_max {@include vw-mo(height, 222);}
             .main_txt {@include vw-mo(font-size, 50); @include vw-mo(line-height, 60); color: #251d12; position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400; width: 100%;}
             .main_txt::after{ content: "";position: absolute; background-image: url(../../img/joo_banner_under_mo.png); background-repeat: no-repeat; @include vw-mo(background-size, 340 8); @include vw-mo(width, 340); @include vw-mo(line-height, 8); top: 95%; left: 50%; transform: translateX(-50%); @include vw-mo(height, 12);}
         }
