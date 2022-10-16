@@ -41,6 +41,8 @@
             }
             .content_list:nth-child(2) .title_box .img_box {@include vw-pc(width, 50);}    
         }
+        .latest-img {@include vw-pc(width, 1048); @include vw-pc(height, 582); overflow: hidden;}
+        .latest-img img {transform: translateY(-13%);}
     }
     // sec_youtube
 

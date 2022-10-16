@@ -235,6 +235,24 @@
     width: 3.4722222222vw;
   }
 }
+.joopago .sec_youtube .latest-img {
+  width: 1048px;
+  height: 582px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1440px) {
+  .joopago .sec_youtube .latest-img {
+    width: 72.7777777778vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .joopago .sec_youtube .latest-img {
+    height: 40.4166666667vw;
+  }
+}
+.joopago .sec_youtube .latest-img img {
+  transform: translateY(-13%);
+}
 .joopago .sec_review .position_box {
   position: absolute;
   top: 50%;
