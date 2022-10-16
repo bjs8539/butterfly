@@ -41,7 +41,7 @@
             }
             .content_list:nth-child(2) .title_box .img_box {@include vw-pc(width, 50);}    
         }
-        .latest-img {@include vw-pc(width, 1048); @include vw-pc(height, 582); overflow: hidden;}
+        .latest-img {@include vw-pc(width, 1048); @include vw-pc(height, 582); margin: 0 auto; overflow: hidden;}
         .latest-img img {transform: translateY(-13%);}
     }
     // sec_youtube
@@ -75,12 +75,18 @@
                 @include vw-max(margin-right, 18);
                 .agree_check {
                     input {}
-                    a {color: #fff; @include vw-max(font-size, 16); @include vw-max(line-height, 24);}
+                    a {color: #fff; @include vw-max(font-size, 16); @include vw-max(line-height, 24); cursor: pointer;}
                 }
             } 
             .btn_box {
                 .apply_btn {color: #fff; background-color: #46f98f; @include vw-max(width, 190); @include vw-max(height, 46); @include vw-max(border-radius, 10); @include vw-max(font-size, 17); @include vw-max(line-height, 24); display: flex; align-items: center; justify-content: center;}
             }
+            .regFormFrame {display: flex;}
+            .regFormList ul {display: flex;}
+            .regFormFrame .regFormPrivacy, .regFormFrame .regFormService {width:80%; @include vw-max(height, 300); position:absolute; @include vw-max(bottom, 150); left:50%; transform: translateX(-50%); background:#fff; box-sizing:border-box; padding:20px; display:none; }
+            .regFormFrame .regFormPrivacy h2, .regFormFrame .regFormService h2 {@include vw-max(font-size, 20);}
+            .regFormFrame .regFormPrivacy .regFormPrivacyCont, 
+            .regFormFrame .regFormService .regFormServiceCont {width:100%; @include vw-max(height, 210); @include vw-max(font-size, 16); overflow:auto; overflow-y:auto; overflow-x:hidden; box-sizing:border-box; @include vw-max(padding, 10);}
         }
     }
     .mo_footer {display: none;}
@@ -108,7 +114,7 @@
     
         .sec_banner {
             .inner_max {@include vw-mo(height, 222);}
-            .main_txt {@include vw-mo(font-size, 50); @include vw-mo(line-height, 60); color: #251d12; position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400; width: 100%;}
+            .main_txt {@include vw-mo(font-size, 50); @include vw-mo(line-height, 60); color: #251d12; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: 400; width: 100%;}
             .main_txt::after{ content: "";position: absolute; background-image: url(../../img/joo_banner_under_mo.png); background-repeat: no-repeat; @include vw-mo(background-size, 340 8); @include vw-mo(width, 340); @include vw-mo(line-height, 8); top: 95%; left: 50%; transform: translateX(-50%); @include vw-mo(height, 12);}
         }
         // sec_banner
@@ -131,6 +137,7 @@
                 }
                 .content_list:nth-child(2) .title_box .img_box {@include vw-mo(width, 50);}    
             }
+            .latest-img {@include vw-mo(width, 524); @include vw-mo(height, 291);}
         }
         // sec_youtube
     
@@ -138,7 +145,7 @@
             .position_box{
                 position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
                 .inner_1440 {
-                    .img_box {@include vw-pc(width, 1123); margin: 0 auto;}
+                    .img_box {@include vw-mo(width, 1123); margin: 0 auto;}
                 }
             }
                 
