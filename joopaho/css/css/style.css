@@ -155,7 +155,7 @@
 .joopago .sec_youtube {
   background-image: url(../../img/joo_youtube_bg_pc.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   height: 1900px;
   padding: 90px 0px;

@@ -25,7 +25,7 @@
     // sec_banner
 
     .sec_youtube {
-        background-image: url(../../img/joo_youtube_bg_pc.jpg);background-repeat: no-repeat; background-size: 100%; width: 100%; @include vw-pc(height, 1900);@include vw-pc(padding, 90 0);
+        background-image: url(../../img/joo_youtube_bg_pc.jpg);background-repeat: no-repeat; background-size: cover; width: 100%; @include vw-pc(height, 1900);@include vw-pc(padding, 90 0);
         .inner_1440 {
             @include vw-pc(width, 1048);
             .content_list {
