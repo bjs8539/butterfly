@@ -1,0 +1,152 @@
+
+.nowcar {
+    p {margin: 0;}
+    .sec_menu {
+        .inner_1440 {
+            display: flex; @include vw-pc(width, 1330);@include vw-pc(height, 142);justify-content: space-between; align-items: center;
+            .img_box {@include vw-pc(width, 126);}
+            ul {display: flex;}
+            li {@include vw-pc(font-size, 18); @include vw-pc(line-height, 18); @include vw-pc(margin-right, 96); font-weight: 700;}
+            li:last-child {margin-right: 0;}
+        }
+    }
+    // sec_menu
+
+    .sec_kv {
+        .inner_1920 {
+            .txt_box {
+                color: #fff;
+                position: absolute;@include vw-pc(width, 1320); top: 6%; left: 50%; transform: translateX(-50%);
+                .pre_txt {display: flex; justify-content: space-between; @include vw-max(margin-bottom, -150);}
+                .pre_txt .pre_left {@include vw-max(font-size, 22); @include vw-max(line-height, 34); font-weight: 700; position: relative;}
+                .pre_txt .pre_left::after {content: "";
+                    position: absolute; @include vw-max(width, 211); @include vw-max(height, 1);top: 23%;background: #fff;right: -78%;}
+                .pre_txt .pre_right {@include vw-max(font-size, 22); @include vw-max(line-height, 34); font-weight: 700; text-align: right}
+                .main_title {@include vw-max(font-size, 160); @include vw-max(line-height, 179); @include vw-max(letter-spacing, -15); font-weight: 700; @include vw-max(margin-bottom, 40);}
+                .main_title em {color: #FF6624; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+                .add_txt {@include vw-max(font-size, 28); @include vw-max(line-height, 48);font-weight: 700; @include vw-max(padding-left, 15); @include vw-max(margin-bottom, 90); @include vw-max(letter-spacing, -2);}
+                .kv_btn {@include vw-max(width, 260); @include vw-max(height, 60); @include vw-max(border-radius, 60); background-color: #fff; color: #FF6624; @include vw-max(font-size, 18); font-weight: 700; display: flex; align-items: center; justify-content: center;}
+                .kv_btn:hover {background-color:transparent; color: #fff;border: 1px solid #fff;}
+
+            }
+        }
+    }
+    // sec_kv         
+
+    .sec_benefit {
+        @include vw-pc(margin-bottom, 268);
+        background-image: url(../../img/now_benefit_bg_pc.png); background-repeat: no-repeat; @include vw-max(background-size, 1920 2621); @include vw-max(max-width, 1920); @include vw-max(height, 2621);
+        .inner_1920 {@include vw-max(width, 1440);
+            > div {position: absolute;}
+            .title_txt {top: 0; right: 0;@include vw-max(font-size, 48); @include vw-max(letter-spacing, -1); color: #0F4B7D; font-weight: 700;text-align: right;margin: 0;}
+            .notice_box {
+                display: flex; @include vw-max(top, 106); @include vw-max(right, 0);
+                .notice_list {
+                    @include vw-max(width, 410); @include vw-max(height, 555); @include vw-max(padding-left, 50);
+                    .img_box {@include vw-max(width, 165); @include vw-max(margin-bottom, 40);}
+                    .pre_txt {@include vw-max(font-size, 26); @include vw-max(letter-spacing, -1); font-weight: 700; @include vw-max(margin-bottom, 25);}
+                    .sub_txt {@include vw-max(font-size, 22); @include vw-max(letter-spacing, -1); @include vw-max(line-height, 34);}
+                }
+                .notice_list:nth-child(1) {@include vw-max(padding-top, 104); @include vw-max(margin-right, 30);}
+                .notice_list:nth-child(2) {@include vw-max(padding-top, 137);}
+            }
+            .benefit_box01 {
+                left: 0; @include vw-max(top, 443);
+                .img_box {@include vw-max(width, 335); @include vw-max(margin-bottom, 115);}
+                .main_txt {position: relative;@include vw-max(font-size, 42); @include vw-max(line-height, 68); @include vw-max(letter-spacing, -3); color: #fff; font-weight: 700;}
+                .main_txt::after {position: absolute; content: ''; @include vw-max(width, 548); @include vw-max(height, 1); background-color: #ccc; @include vw-max(bottom, 30); @include vw-max(right, -600);}
+            }
+            .benefit_box02 {
+                @include vw-max(top, 1218); left: 50%; transform: translateX(-50%); text-align: center; width: 100%;
+                .round_txt {@include vw-max(width, 470); @include vw-max(height, 80); @include vw-max(font-size, 36); @include vw-max(letter-spacing, -2); font-weight: 700; color: #0F4B7D; background-color: #fff; display: flex; align-items: center; justify-content: center;@include vw-max(margin, 0 auto 50); @include vw-max(border-radius, 100);}
+                .sub_txt {@include vw-max(font-size, 52); font-weight: 700; @include vw-max(letter-spacing, -2); color: #fff; @include vw-max(line-height, 72);}
+            }
+            .benefit_box03 {
+                @include vw-max(top, 1640); left: 0; color: #fff;
+                .pre_txt {@include vw-max(font-size, 28); @include vw-max(letter-spacing, -2); font-weight: 700; @include vw-max(margin-bottom, 44);}
+                .main_txt {@include vw-max(font-size, 52); @include vw-max(letter-spacing, -2); font-weight: 700; @include vw-max(margin-bottom, 30);}
+                .main_txt em {@include vw-max(font-size, 28); @include vw-max(letter-spacing, -2); font-weight: 700; display: block; @include vw-max(margin-bottom, 15);}
+                .add_txt {@include vw-max(font-size, 16); @include vw-max(letter-spacing, -2); opacity: 0.8;}
+            }
+            .benefit_box04 {
+                @include vw-max(width, 545); @include vw-max(top, 2190); @include vw-max(left, 310);
+                .img_box {@include vw-max(width, 130);}
+                p {@include vw-max(font-size, 47); font-weight: 700; color: #fff; @include vw-max(letter-spacing, -2);}
+                p em {@include vw-max(font-size, 36);display: block; @include vw-max(margin-bottom, 25);}
+            }
+            .benefit_box05 {
+                @include vw-max(top, 2480); @include vw-max(right, 0); text-align: right;
+                .pre_txt {@include vw-max(font-size, 42); @include vw-max(letter-spacing, -2); display: block; @include vw-max(margin-bottom, 15); font-weight: 700; @include vw-max(padding-right, 10);}
+                .main_txt {@include vw-max(font-size, 72); @include vw-max(letter-spacing, -2); display: block; @include vw-max(margin-bottom, 40); font-weight: 700; margin-top: 0;}
+                .main_txt span { color: #FF6624;}
+                .add_txt {@include vw-max(font-size, 16); @include vw-max(letter-spacing, -2);}
+            }
+        }
+    }
+    // sec_benefit
+
+    .sec_product {
+        @include vw-pc(margin-bottom, 177);
+        .inner_1440 {
+            .title_box {
+                text-align: center; position: relative; @include vw-pc(width, 400); @include vw-pc(margin, 0 auto 85);
+                .title_txt {@include vw-pc(font-size, 52); @include vw-pc(letter-spacing, -3); font-weight: 700; background-color: #fff}
+                .sub_txt {@include vw-pc(font-size, 28); @include vw-pc(letter-spacing, -3); font-weight: 500; display: block; @include vw-pc(margin-bottom, 20);}
+            }
+            .title_box::after {content: "";position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%; @include vw-pc(width, 1440); @include vw-pc(height, 0.5);background-color: #888;z-index: -1;}
+            ul {
+                display: flex; justify-content: space-between; @include vw-pc(padding-left, 0); @include vw-pc(margin-bottom, 50);
+                li {@include vw-pc(width, 350); text-align: center}
+                li .img_box {@include vw-pc(margin-bottom, 25);}
+                li p {@include vw-pc(font-size, 36); font-weight: 500; @include vw-pc(letter-spacing, -3); margin: 0;} 
+            }
+            .add_txt {@include vw-pc(font-size, 16); @include vw-pc(letter-spacing, -2); text-align: center;}
+        }
+    }
+    // sec_product
+
+    .sec_ex {
+        @include vw-pc(margin-bottom, 137);
+        .inner_1440 {
+            display: flex; align-items: center;
+            > .img_box {@include vw-pc(width, 912);}
+            ul {
+                display: flex; flex-direction: column; padding-left: 0;
+                li { 
+                    display: flex; align-items: center; @include vw-pc(margin-bottom, 38);
+                    .img_box {@include vw-pc(margin-right, 22);@include vw-pc(width, 68);}
+                    .main_txt {@include vw-pc(font-size, 28); @include vw-pc(letter-spacing, -2); font-weight: 700; @include vw-pc(margin-bottom, 15); margin-top: 0}
+                    .sub_txt {@include vw-pc(font-size, 16); @include vw-pc(letter-spacing, -2); font-weight: 500; margin: 0;}
+                }
+            }
+        }
+    }
+    // sec_ex
+
+    .sec_info {
+        background-color: #f5f5f5; @include vw-pc(padding, 150 0);
+        .title_box {
+            @include vw-pc(margin-bottom, 100); text-align: center;
+            .pre_txt {@include vw-pc(font-size, 28); @include vw-pc(letter-spacing, -2); @include vw-pc(margin-bottom, 25); font-weight: 500;}
+            .main_txt {@include vw-pc(font-size, 52); @include vw-pc(letter-spacing, -3); font-weight: 700;}
+        }
+        .contents_box {
+            @include vw-pc(width, 1200); display: flex; flex-wrap: wrap; margin: 0 auto;
+            .contents_list {
+                @include vw-pc(width, 260); @include vw-pc(margin-right, 210);
+                .img_box {@include vw-pc(width, 138); @include vw-pc(margin-bottom, 40);}
+                .main_txt {@include vw-pc(font-size, 28);font-weight: 700; @include vw-pc(letter-spacing, -2);@include vw-pc(margin-bottom, 15); }
+                .sub_txt {@include vw-pc(font-size, 20); font-weight: 500; @include vw-pc(letter-spacing, -3); @include vw-pc(line-height, 30);}
+            }
+            .contents_list:nth-child(3) {margin-right: 0;}
+            .contents_list:nth-child(6) {margin-right: 0;}
+            .contents_list:nth-child(-n + 3) {@include vw-pc(margin-bottom, 80);}
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nowcar {
+        
+    }
+}

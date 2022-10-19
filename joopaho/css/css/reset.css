@@ -24,7 +24,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 html {padding: 0; margin: 0; font-size: 0;}
 body {padding: 0; margin: 0;}
-
+p {margin: 0;}
 .m_hide{display:block !important;}
 .m_show{display:none !important;}
 
