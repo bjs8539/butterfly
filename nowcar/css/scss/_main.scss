@@ -6,7 +6,7 @@
             display: flex; @include vw-pc(width, 1330);@include vw-pc(height, 142);justify-content: space-between; align-items: center;
             .img_box {@include vw-pc(width, 126);}
             ul {display: flex;}
-            li {@include vw-pc(font-size, 18); @include vw-pc(line-height, 18); @include vw-pc(margin-right, 96); font-weight: 700;}
+            li {@include vw-pc(font-size, 18); @include vw-pc(line-height, 18); @include vw-pc(margin-right, 96); font-weight: 700; cursor: pointer;}
             li:last-child {margin-right: 0;}
         }
     }
@@ -143,10 +143,312 @@
             .contents_list:nth-child(-n + 3) {@include vw-pc(margin-bottom, 80);}
         }
     }
+
+    .sec_process {
+        background-image: url(../../img/now_process_bg_pc.png) ;background-repeat: no-repeat; @include vw-max(max-width, 1920); @include vw-max(height, 1216); @include vw-max(background-size, 1920 1216); @include vw-max(margin-bottom, 225);
+        .inner_1440 {
+            @include vw-max(width, 1150);
+            .content_align {
+                @include vw-max(padding-top, 145);display: flex; justify-content: space-between;
+                .line_box {
+                    .line_list {
+                        display: flex; align-items: flex-start; @include vw-max(margin-bottom, 92);
+                        .line_num {@include vw-max(font-size, 56); @include vw-max(letter-spacing, -2); color: #0F4B7D;font-weight: 700; @include vw-max(margin-right, 21);}
+                        .line_txt {@include vw-max(padding-top, 10);}
+                        .line_txt .pre_txt {@include vw-max(font-size, 28); @include vw-max(letter-spacing, -2);font-weight: 700; @include vw-max(margin-bottom, 15);}
+                        .line_txt .sub_txt {@include vw-max(font-size, 16); @include vw-max(letter-spacing, -2); @include vw-max(line-height, 24);}
+                    }
+                }
+                .title_box {
+                    text-align: right;
+                    .pre_txt {@include vw-max(font-size, 28); @include vw-max(letter-spacing, -2); @include vw-max(margin-bottom, 30);}
+                    .sub_txt {@include vw-max(font-size, 52); @include vw-max(letter-spacing, -2);font-weight: 700; @include vw-max(line-height, 72);}
+                }
+            }
+            .line_bg {position: absolute; top: 0; @include vw-max(left, -60); @include vw-max(width, 30);}
+        }
+    }
+    // sec_process
+
+    .sec_review {
+        @include vw-pc(padding-bottom, 130);
+        .inner_1440 {
+            .title_box {
+                text-align: center; @include vw-pc(margin-bottom, 50);
+                .sub_txt {@include vw-pc(font-size, 28); @include vw-pc(letter-spacing, -2); font-weight: 500; @include vw-pc(margin-bottom, 10);}
+                .main_txt {@include vw-pc(font-size, 52); @include vw-pc(letter-spacing, -2); font-weight: 700;}
+                .main_txt .c_orange {color: #F2630C}
+            }
+            .review_swi {
+                @include vw-pc(width, 1250); overflow: hidden; @include vw-pc(margin, 0 auto);
+                .swiper_list {
+                    @include vw-pc(width, 400);@include vw-pc(height, 556);@include vw-pc(padding-top, 50); @include vw-pc(border-radius, 10); @include vw-pc(margin-right, 25); @include vw-pc(border, 1 solid #e3e3e3);background : #fff;
+                    .txt_con {
+                        @include vw-pc(padding, 20 40);
+                        .name_txt {@include vw-pc(font-size, 18); @include vw-pc(letter-spacing, -2); font-weight: 700; @include vw-pc(margin-bottom, 12);}
+                        .review_txt {@include vw-pc(font-size, 16); @include vw-pc(letter-spacing, -2); font-weight: 500; overflow: hidden;text-overflow: ellipsis;white-space: normal;@include vw-pc(line-height, 24);@include vw-pc(height, 170);text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 7 ;-webkit-box-orient: vertical;}
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    background-color: #fff;
+                    @include vw-pc(border, 1 solid #ccc); @include vw-pc(width, 75); @include vw-pc(height, 75); border-radius: 50%; @include vw-pc(top, 400);
+                }
+                .swiper-button-prev {@include vw-pc(left, -5);}
+                .swiper-button-next {@include vw-pc(right, -5);}
+                .swiper-button-next::after, .swiper-button-prev::after {@include vw-pc(font-size, 26); font-weight: 700; color: #0F4B7D;}
+            }
+        }
+        .blue_bg {width: 100%; @include vw-pc(height, 415); background-color: #0F4B7D; position: absolute; bottom: 0; left: 0; z-index: -1;}
+    }
+    // sec_review
+
+    .sec_coper {
+        @include vw-pc(padding, 130 0 165);
+        .inner_1440 {
+            @include vw-pc(width, 1275);
+            .title_box{
+                text-align: center; @include vw-pc(margin-bottom, 95);
+                .pre_txt {@include vw-pc(font-size, 28); @include vw-pc(letter-spacing, -2); font-weight: 500; @include vw-pc(margin-bottom, 25);}
+                .main_txt {@include vw-pc(font-size, 52); @include vw-pc(letter-spacing, -2); font-weight: 700;}
+            }
+        }
+    }
+    // sec_coper
+
+    .sec_footer {
+        background-color: #000; text-align: center; color: #fff; @include vw-pc(height, 460); @include vw-pc(padding-top, 114);
+        .img_box {
+            @include vw-pc(width, 144); @include vw-pc(margin, 0 auto 55);
+        }
+        .pre_txt {@include vw-pc(font-size, 14); @include vw-pc(letter-spacing, 0); font-weight: 500; opacity: 0.7; @include vw-pc(margin-bottom, 30); @include vw-pc(line-height, 24);}
+        .sub_txt {@include vw-pc(font-size, 14); @include vw-pc(letter-spacing, 0); font-weight: 700;}
+    }
 }
 
 @media screen and (max-width: 768px) {
     .nowcar {
-        
+        overflow: hidden;
+        .sec_menu {
+            .inner_1440 {
+                display: flex; width: 100%;@include vw-mo(height, 140);justify-content: space-between; align-items: center; @include vw-mo(padding, 0 65);
+                .img_box {@include vw-mo(width, 120);}
+                ul {display: flex;}
+                li {@include vw-mo(font-size, 22); @include vw-mo(line-height, 18); @include vw-mo(margin-right, 24); font-weight: 700;}
+                li:last-child {margin-right: 0;}
+            }
+        }
+        // sec_menu
+    
+        .sec_kv {
+            .inner_1920 {
+                .txt_box {
+                    color: #fff;
+                    position: absolute;width: 100%; top: 5%; @include vw-mo(left, 60); transform:none;
+                    .pre_txt {display: flex; flex-direction: column-reverse;justify-content: flex-start; @include vw-mo(margin-bottom, -105); @include vw-mo(padding-left, 10);}
+                    .pre_txt .pre_left {@include vw-mo(font-size, 28); @include vw-mo(line-height, 50); font-weight: 700; position: relative; @include vw-mo(letter-spacing, -2);}
+                    .pre_txt .pre_left::after {content: "";
+                        position: absolute; @include vw-mo(width, 211); @include vw-mo(height, 1);top: 23%;background: #fff;right: -78%;}
+                    .pre_txt .pre_right {@include vw-mo(font-size, 28); @include vw-mo(line-height, 50); font-weight: 700; text-align: left; @include vw-mo(letter-spacing, -2);}
+                    .main_title {@include vw-mo(font-size, 142); @include vw-mo(line-height, 155); @include vw-mo(letter-spacing, -13); font-weight: 700; @include vw-mo(margin-bottom, 25);}
+                    .main_title em {color: #FF6624; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+                    .add_txt {@include vw-mo(font-size, 32); @include vw-mo(line-height, 48);font-weight: 700; @include vw-mo(padding-left, 15); @include vw-mo(margin-bottom, 50); @include vw-mo(letter-spacing, -2);}
+                    .kv_btn {@include vw-mo(width, 260); @include vw-mo(height, 65); @include vw-mo(border-radius, 60); background-color: #fff; color: #FF6624; @include vw-mo(font-size, 22); font-weight: 700; display: flex; align-items: center; justify-content: center;}
+                    .kv_btn:hover {background-color:transparent; color: #fff;border: 1px solid #fff;}
+    
+                }
+            }
+        }
+        // sec_kv         
+    
+        .sec_benefit {
+            @include vw-mo(margin-bottom, 90);
+            background-image: url(../../img/now_benefit_bg_mo.png); background-repeat: no-repeat; background-size: 100%; width: 100%; @include vw-mo(height, 3627);
+            .inner_1920 {width: 100%;
+                > div {position: absolute;}
+                .title_txt {@include vw-mo(top, -70); @include vw-mo(right, 45);@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -1); color: #0F4B7D; font-weight: 700;text-align: right;margin: 0; @include vw-mo(line-height, 75);}
+                .notice_box {
+                    display: flex;  flex-direction: column;@include vw-mo(top, 111); left: 50%; transform: translateX(-50%);@include vw-mo(width, 500);
+                    .notice_list {
+                        @include vw-mo(width, 500); @include vw-mo(height, 555); @include vw-mo(padding-left, 0); text-align: center;
+                        .img_box {@include vw-mo(width, 180); @include vw-mo(margin, 0 auto 40);}
+                        .pre_txt {@include vw-mo(font-size, 32); @include vw-mo(letter-spacing, -1); font-weight: 700; @include vw-mo(margin-bottom, 25);}
+                        .sub_txt {@include vw-mo(font-size, 26); @include vw-mo(letter-spacing, -1); @include vw-mo(line-height, 38);}
+                    }
+                    .notice_list:nth-child(1) {@include vw-mo(padding-top, 67); @include vw-mo(margin-right, 0);}
+                    .notice_list:nth-child(2) {@include vw-mo(padding-top, 88);}
+                }
+                .benefit_box01 {
+                    left: 50%; @include vw-mo(top, 1620); transform: translateX(-50%);width: 100%;
+                    .img_box {@include vw-mo(width, 335); @include vw-mo(margin-bottom, 115);}
+                    .main_txt {position: relative;@include vw-mo(font-size, 42); @include vw-mo(line-height, 68); @include vw-mo(letter-spacing, -3); color: #fff; font-weight: 700; text-align: center;}
+                    .main_txt::after {position: absolute; content: ''; @include vw-mo(width, 548); @include vw-mo(height, 1); background-color: #ccc; @include vw-mo(bottom, 30); @include vw-mo(right, -600);}
+                }
+                .benefit_box02 {
+                    @include vw-mo(top, 2190); left: 50%; transform: translateX(-50%); text-align: center; width: 100%;
+                    .round_txt {@include vw-mo(width, 436); @include vw-mo(height, 75); @include vw-mo(font-size, 32); @include vw-mo(letter-spacing, -2); font-weight: 700; color: #0F4B7D; background-color: #fff; display: flex; align-items: center; justify-content: center;@include vw-mo(margin, 0 auto 50); @include vw-mo(border-radius, 100);}
+                    .sub_txt {@include vw-mo(font-size, 41); font-weight: 700; @include vw-mo(letter-spacing, -2); color: #fff; @include vw-mo(line-height, 60);}
+                }
+                .benefit_box03 {
+                    @include vw-mo(top, 2700); @include vw-mo(left, 60);;color: #fff;
+                    .pre_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(margin-bottom, 50);}
+                    .main_txt {@include vw-mo(font-size, 42); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(margin-bottom, 30);}
+                    .main_txt em {@include vw-mo(font-size, 26); @include vw-mo(letter-spacing, -2); font-weight: 700; display: block; @include vw-mo(margin-bottom, 15);}
+                    .add_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2); opacity: 0.8;}
+                }
+                .benefit_box04 {
+                    @include vw-mo(width, 341); @include vw-mo(top, 3190); @include vw-mo(left, 38);
+                    .img_box {@include vw-mo(width, 78); @include vw-mo(margin-bottom, 15);}
+                    p {@include vw-mo(font-size, 34); font-weight: 700; color: #fff; @include vw-mo(letter-spacing, -2);}
+                    p em {@include vw-mo(font-size, 24);display: block; @include vw-mo(margin-bottom, 15);}
+                }
+                .benefit_box05 {
+                    @include vw-mo(top, 3405); @include vw-mo(right, 70); text-align: right;
+                    .pre_txt {@include vw-mo(font-size, 30); @include vw-mo(letter-spacing, -2); display: block; @include vw-mo(margin-bottom, 15); font-weight: 700; @include vw-mo(padding-right, 10);}
+                    .main_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -2); display: block; @include vw-mo(margin-bottom, 35); font-weight: 700; margin-top: 0;}
+                    .main_txt span { color: #FF6624;}
+                    .add_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2);}
+                }
+            }
+        }
+        // sec_benefit
+    
+        .sec_product {
+            @include vw-mo(margin-bottom, 122);
+            .inner_1440 {
+                .title_box {
+                    text-align: center; position: relative; @include vw-mo(width, 400); @include vw-mo(margin, 0 auto 85);
+                    .title_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -3); font-weight: 700; background-color: #fff}
+                    .sub_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -3); font-weight: 500; display: block; @include vw-mo(margin-bottom, 20);}
+                }
+                .title_box::after {content: "";position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%; @include vw-mo(width, 1440); @include vw-mo(height, 0.5);background-color: #888;z-index: -1;}
+                ul {
+                    display: flex; justify-content: space-between; @include vw-mo(padding-left, 0); @include vw-mo(margin-bottom, 60); flex-wrap: wrap; @include vw-mo(padding, 0 59);
+                    li {@include vw-mo(width, 285); text-align: center}
+                    li .img_box {@include vw-mo(margin-bottom, 25);}
+                    li p {@include vw-mo(font-size, 36); font-weight: 500; @include vw-mo(letter-spacing, -3); margin: 0;} 
+                    li:nth-child(-n+2) {@include vw-mo(margin-bottom, 41);}
+                }
+                .add_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2); text-align: center;}
+            }
+        }
+        // sec_product
+    
+        .sec_ex {
+            @include vw-mo(margin-bottom, 60);
+            .inner_1440 {
+                display: flex; align-items: flex-start; flex-direction: column;
+                > .img_box {@include vw-mo(width, 718); @include vw-mo(margin-bottom, 64);}
+                ul {
+                    display: flex; flex-direction: column; @include vw-mo(padding-left, 189);
+                    li { 
+                        display: flex; align-items: center; @include vw-mo(margin-bottom, 38);
+                        .img_box {@include vw-mo(margin-right, 22);@include vw-mo(width, 68);}
+                        .main_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(margin-bottom, 15); margin-top: 0}
+                        .sub_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2); font-weight: 500; margin: 0;}
+                    }
+                }
+            }
+        }
+        // sec_ex
+    
+        .sec_info {
+            background-color: #f5f5f5; @include vw-mo(padding, 150 0 105);
+            .title_box {
+                @include vw-mo(margin-bottom, 100); text-align: center;
+                .pre_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2); @include vw-mo(margin-bottom, 15); font-weight: 500; @include vw-mo(line-height, 42);}
+                .main_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -3); font-weight: 700; @include vw-mo(line-height, 72);}
+            }
+            .contents_box {
+                width: 100%; display: flex; flex-wrap: wrap; margin: 0 auto; justify-content: space-between; @include vw-mo(padding, 0 64);
+                .contents_list {
+                    @include vw-mo(width, 270); @include vw-mo(margin-right, 0); text-align: center;
+                    .img_box {@include vw-mo(width, 138); @include vw-mo(margin,0 auto 30);}
+                    .main_txt {@include vw-mo(font-size, 32);font-weight: 700; @include vw-mo(letter-spacing, -2);@include vw-mo(margin-bottom, 15); }
+                    .sub_txt {@include vw-mo(font-size, 20); font-weight: 500; @include vw-mo(letter-spacing, -3); @include vw-mo(line-height, 30);}
+                }
+                .contents_list:nth-child(-n + 4) {@include vw-mo(margin-bottom, 91);}
+            }
+        }
+    
+        .sec_process {
+           background-image: none;width: 100%; height: 100%; @include vw-mo(margin-bottom, 45);
+            .inner_1440 {
+               width: 100%;
+                .content_align {
+                    @include vw-mo(padding-top, 120);display: flex; flex-direction: column;
+                    .line_box {
+                        @include vw-mo(padding-left, 202);
+                        .line_list {
+                            display: flex; align-items: flex-start; @include vw-mo(margin-bottom, 84);
+                            .line_num {@include vw-mo(font-size, 56); @include vw-mo(letter-spacing, -2); color: #0F4B7D;font-weight: 700; @include vw-mo(margin-right, 21);}
+                            .line_txt {@include vw-mo(padding-top, 10);}
+                            .line_txt .pre_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2);font-weight: 700; @include vw-mo(margin-bottom, 15);}
+                            .line_txt .sub_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2); @include vw-mo(line-height, 28);}
+                        }
+                    }
+                    .title_box {
+                        text-align: right; position: absolute; top: 10%; right: 8%;
+                        .pre_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2); @include vw-mo(margin-bottom, 20);}
+                        .sub_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -2);font-weight: 700; @include vw-mo(line-height, 72);}
+                    }
+                }
+                .line_bg {position: absolute;@include vw-mo(top, 765); @include vw-mo(left, 130); @include vw-mo(width, 30);z-index: -1}
+            }
+        }
+        // sec_process
+    
+        .sec_review {
+            @include vw-mo(padding-bottom, 130);
+            .inner_1440 {
+                .title_box {
+                    text-align: center; @include vw-mo(margin-bottom, 50);
+                    .sub_txt {@include vw-mo(font-size, 24); @include vw-mo(letter-spacing, -2); font-weight: 500; @include vw-mo(margin-bottom, 25);}
+                    .main_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(line-height, 60);}
+                    .main_txt .c_orange {color: #F2630C}
+                }
+                .review_swi {
+                    width: 100%; overflow: hidden; @include vw-mo(margin, 0 auto);
+                    .swiper_list {
+                        @include vw-mo(width, 500);@include vw-mo(height, 693);@include vw-mo(padding-top, 64); @include vw-mo(border-radius, 10); @include vw-mo(margin-right, 25); @include vw-mo(border, 1 solid #e3e3e3);background : #fff;
+                        .txt_con {
+                            @include vw-mo(padding, 40 50);
+                            .name_txt {@include vw-mo(font-size, 22); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(margin-bottom, 20);}
+                            .review_txt {@include vw-mo(font-size, 18); @include vw-mo(letter-spacing, -2); font-weight: 500; overflow: hidden;text-overflow: ellipsis;white-space: normal;@include vw-mo(line-height, 28);@include vw-mo(height, 170);text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp:6 ;-webkit-box-orient: vertical;}
+                        }
+                    }
+                    .swiper-button-next, .swiper-button-prev {
+                        background-color: #fff;
+                        @include vw-mo(border, 1 solid #ccc); @include vw-mo(width, 75); @include vw-mo(height, 75); border-radius: 50%; @include vw-mo(top, 400);
+                    }
+                    .swiper-button-prev {@include vw-mo(left, -5);}
+                    .swiper-button-next {@include vw-mo(right, -5);}
+                    .swiper-button-next::after, .swiper-button-prev::after {@include vw-mo(font-size, 26); font-weight: 700; color: #0F4B7D;}
+                }
+            }
+            .blue_bg {width: 100%; @include vw-mo(height, 470); background-color: #0F4B7D; position: absolute; bottom: 0; left: 0; z-index: -1;}
+        }
+        // sec_review
+    
+        .sec_coper {
+            @include vw-mo(padding, 130 60 125);
+            .inner_1440 {
+                .title_box{
+                    text-align: center; @include vw-mo(margin-bottom, 60);
+                    .pre_txt {@include vw-mo(font-size, 28); @include vw-mo(letter-spacing, -2); font-weight: 500; @include vw-mo(margin-bottom, 40);}
+                    .main_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -3); font-weight: 700; @include vw-mo(line-height, 60);}
+                }
+            }
+        }
+        // sec_coper
+    
+        .sec_footer {
+            background-color: #000; text-align: center; color: #fff; @include vw-mo(height, 572); @include vw-mo(padding-top, 140);
+            .img_box {
+                @include vw-mo(width, 144); @include vw-mo(margin, 0 auto 55);
+            }
+            .pre_txt {@include vw-mo(font-size, 14); @include vw-mo(letter-spacing, 0); font-weight: 500; opacity: 0.7; @include vw-mo(margin-bottom, 30); @include vw-mo(line-height, 28);}
+            .pre_txt .line_show{display: none}
+            .sub_txt {@include vw-mo(font-size, 14); @include vw-mo(letter-spacing, 0); font-weight: 700;}
+        }
     }
 }

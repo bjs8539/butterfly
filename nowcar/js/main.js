@@ -154,10 +154,34 @@
             }
             });
         },
+        reviewSwiper: function () {
+            var reSwiper = new Swiper('.swiper-container.review_swi', {
+               slidesPerView: 'auto',
+               centeredSlides: true, 
+               loop: true,
+               // loopedSlides: 4,
+               speed: 700,
+               autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false
+               },
+                navigation:{
+                    nextEl:".swiper-button-next",
+                    prevEl:".swiper-button-prev", 
+                },
+               breakpoints: {
+                  769: {
+                     
+                  }
+               },
+            });
+        },
+
 
         init: function() {
             this.applyBtn();
             this.anchorEvt();
+            this.reviewSwiper();
         }
     };
 
