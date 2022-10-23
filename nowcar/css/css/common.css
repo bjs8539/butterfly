@@ -152,7 +152,7 @@
 	.bolder		{ font-weight: 800 }
 	.light		{ font-weight: 300 }
 
- */
+*/
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -175,12 +175,12 @@
 
 html,
 body {
-  font-family: "Open Sans", "NanumSquare", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
+  font-family: "Open Sans", "Noto Sans CJK KR", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
   color: #000;
 }
 
 body {
-  font-family: "Open Sans", "NanumSquare", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
+  font-family: "Open Sans", "Noto Sans CJK KR", "Malgun Gothic", "Nanum Gothic", NanumGothic, Dotum, "ë‹ì›€", Arial;
 }
 
 a:hover {
@@ -194,10 +194,6 @@ a {
 input,
 textarea:focus {
   outline: none !important;
-}
-
-br {
-  overflow: hidden;
 }
 
 br {
@@ -285,4 +281,246 @@ br {
   width: auto !important;
 }
 
-/* íŒì—… *//*# sourceMappingURL=common.css.map */
+/* íŒì—… */
+.en {
+  vertical-align: baseline;
+}
+
+.btn-box,
+.btn-box ~ .btn-box {
+  margin: 0;
+}
+
+@media (max-width: 1440px) and (min-width: 1101px) {
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, button, time, mark, audio, video, dd a {
+    font-size: inherit;
+  }
+}
+@media (max-width: 1100px) and (min-width: 801px) {
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, button, time, mark, audio, video, dd a {
+    font-size: inherit;
+  }
+}
+@media (max-width: 800px) {
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, button, time, mark, audio, video, dd a {
+    font-size: inherit;
+  }
+}
+@media all and (max-width: 414px) {
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, button, time, mark, audio, video, dd a {
+    font-size: inherit;
+  }
+}
+/* reset prd server */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.ec_project_wrap p {
+  margin: 0;
+}
+
+.m_hide {
+  display: block !important;
+}
+
+.m_show {
+  display: none !important;
+}
+
+.bs_pt_wrap {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Noto Sans CJK KR";
+  line-height: 1;
+}
+
+.bs_pt_wrap,
+.bs_pt_wrap article,
+.bs_pt_wrap section,
+.bs_pt_wrap nav,
+.bs_pt_wrap aside,
+.bs_pt_wrap header,
+.bs_pt_wrap footer {
+  display: block;
+  position: relative;
+}
+
+.bs_pt_wrap section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.bs_pt_wrap .kr {
+  font-family: "SamsungOneKorean", Dotum, "돋움", "Apple SD Gothic Neo", arial;
+  font-weight: 400;
+}
+
+.bs_pt_wrap .en {
+  font-family: "Samsung Sharp Sans", "SamsungSharpSans";
+  line-height: 1;
+  letter-spacing: 0;
+  vertical-align: baseline;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.bs_pt_wrap .bt {
+  font-family: "HYBatang";
+}
+
+.bs_pt_wrap a,
+.bs_pt_wrap a:hover,
+.bs_pt_wrap a:focus,
+.bs_pt_wrap a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bs_pt_wrap em,
+.bs_pt_wrap i {
+  font-style: normal;
+}
+
+.bs_pt_wrap * {
+  box-sizing: border-box;
+}
+
+.bs_pt_wrap .img_box {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+
+.bs_pt_wrap .img_box img {
+  width: 100%;
+}
+
+.bs_pt_wrap .inner_1920,
+.bs_pt_wrap .inner_1440,
+.bs_pt_wrap .inner_1280,
+.bs_pt_wrap .inner_1200 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bs_pt_wrap .inner_1920 {
+  max-width: 1920px;
+}
+
+.bs_pt_wrap .inner_1440 {
+  max-width: 1440px;
+}
+
+.bs_pt_wrap .inner_1280 {
+  max-width: 1280px;
+}
+
+.bs_pt_wrap .inner_1200 {
+  max-width: 1200px;
+}
+
+.bs_pt_wrap .clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.bs_pt_wrap .hidden,
+.bs_pt_wrap .blind {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.bs_pt_wrap .alert_msg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  background: #8a51d3;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* button */
+/* tab */
+.tab_contents .tab_content {
+  display: none;
+}
+
+.tab_contents .tab_content.on {
+  display: block;
+}
+
+.dimm {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+@media all and (min-width: 769px) and (max-width: 1920px) {
+  .bs_pt_wrap .inner_1920 {
+    max-width: 100%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  .bs_pt_wrap .inner_1440 {
+    max-width: 100%;
+  }
+  .bs_pt_wrap .inner_1280 {
+    max-width: 88.8889vw;
+  }
+  .bs_pt_wrap .inner_1200 {
+    max-width: 83.3333vw;
+  }
+}
+@media all and (max-width: 768px) {
+  .m_hide {
+    display: none !important;
+  }
+  .m_show {
+    display: block !important;
+  }
+  .bs_pt_wrap section {
+    max-width: 100%;
+  }
+  .bs_pt_wrap .inner_1920,
+.bs_pt_wrap .inner_1440,
+.bs_pt_wrap .inner_1280,
+.bs_pt_wrap .inner_1200 {
+    max-width: 100%;
+  }
+  .bs_pt_wrap .alert_msg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #8a51d3;
+    height: 4.5625vw;
+    font-size: 3.2vw;
+    line-height: 4.5625vw;
+  }
+  /* button */
+}/*# sourceMappingURL=common.css.map */
