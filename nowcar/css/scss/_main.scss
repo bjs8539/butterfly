@@ -34,6 +34,7 @@
     }
     // sec_kv     
     
+    // sec_customer
     .sec_customer {
         background-color: #f8f8f8;
         .inner_1440 {
@@ -65,6 +66,32 @@
             }
         }
     }
+    // sec_customer
+
+    // sec_special
+    .sec_special {
+        .inner_1440 {
+            .special_wrap {
+                @include vw-pc(padding, 148 0);
+                .title_wrap {@include vw-pc(margin-bottom, 88); text-align: center;}
+                .title_wrap .title {@include vw-pc(margin-bottom, 26); @include vw-pc(font-size, 52);}
+                .title_wrap .txt {@include vw-pc(font-size, 22);}
+
+                .product_wrap {display: flex; flex-wrap: wrap;}
+                .product_wrap li {@include vw-pc(width, 470); @include vw-pc(height, 489); @include vw-pc(margin-right, 14); @include vw-pc(margin-bottom, 64); @include vw-pc(padding-top, 25); @include vw-pc(box-shadow, 3 3 13 rgba(0,0,0,0.1));}
+                .product_wrap li:nth-child(3n+0) {margin-right: 0;}
+                .product_wrap li .img_box {@include vw-pc(margin-bottom, 20);}
+
+                .product_wrap li .txt_wrap {@include vw-pc(padding, 0 43);}
+                .product_wrap li .txt_wrap .txt {display: flex; justify-content: space-between; align-items: flex-end; letter-spacing: -0.01em;}
+                .product_wrap li .txt_wrap .txt1 {@include vw-pc(margin-bottom, 10); @include vw-pc(font-size, 16); color: #444; font-weight: 700;}
+                .product_wrap li .txt_wrap .txt2 {@include vw-pc(margin-bottom, 20); @include vw-pc(font-size, 36); font-weight: 700;}
+                .product_wrap li .txt_wrap .txt2 .c_orange {color: #FF6624;}
+                .product_wrap li .txt_wrap .txt3 {@include vw-pc(margin-bottom, 30); @include vw-pc(font-size, 16); font-weight: 400;}
+            }
+        } 
+    }
+    // sec_special
 
     .sec_benefit {
         @include vw-pc(margin-bottom, 268);
