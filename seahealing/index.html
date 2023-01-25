@@ -16,56 +16,58 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <main class="bs_pt_wrap seahealing">
+    <main class="sec_project_wrap bs_pt_wrap seahealing">
         <section class="sec_gnb">
-            <div class="logo_area">
-                <a href="" class="logo_btn">
-                    <div class="img_box">
-                        <img src="./img/sea_logo_mo.png" alt="최상단 로고">
-                    </div>
-                </a>
-                <a href="" class="reserve_btn">
-                    <div class="img_box">
-                        <img src="./img/sea_reservation_logo_mo.png" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="menu_area">
-                <div class="menu_box">
-                    <div class="menu_align">
-                        <a href="" class="menu_list">
-                            ABOUT
-                        </a>
-                        <a href="" class="menu_list">
-                            ROOMS
-                        </a>
-                        <a href="" class="menu_list">
-                            FACILITIES
-                        </a>
-                        <a href="" class="menu_list">
-                            SERVICE
-                        </a>
-                    </div>
-                    <div class="menu_align">
-                        <a href="" class="menu_list">
-                            TRAVEL
-                        </a>
-                        <a href="" class="menu_list">
-                            RESERVATION
-                        </a>
-                        <a href="" class="menu_list">
-                            TRAFFIC
-                        </a>
-                        <a href="" class="menu_list">
-                            COMMUNITY
-                        </a>
+            <div class="gnb_fixed">
+                <div class="logo_area">
+                    <a href="" class="logo_btn">
+                        <div class="img_box">
+                            <img src="./img/sea_logo_mo.png" alt="최상단 로고">
+                        </div>
+                    </a>
+                    <a href="" class="reserve_btn">
+                        <div class="img_box">
+                            <img src="./img/sea_reservation_logo_mo.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="menu_area">
+                    <div class="menu_box">
+                        <div class="menu_align">
+                            <a href="javascripts:;" class="menu_list" data-role="btnAnchor" data-target="#sec_about">
+                                ABOUT
+                            </a>
+                            <a href="javascripts:;" class="menu_list" data-role="btnAnchor" data-target="#sec_room_pre">
+                                ROOMS
+                            </a>
+                            <a href="javascripts:;" class="menu_list">
+                                FACILITIES
+                            </a>
+                            <a href="javascripts:;" class="menu_list">
+                                SERVICE
+                            </a>
+                        </div>
+                        <div class="menu_align">
+                            <a href="javascripts:;" class="menu_list">
+                                TRAVEL
+                            </a>
+                            <a href="javascripts:;" class="menu_list">
+                                RESERVATION
+                            </a>
+                            <a href="javascripts:;" class="menu_list">
+                                TRAFFIC
+                            </a>
+                            <a href="javascripts:;" class="menu_list">
+                                COMMUNITY
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- sec_gnb -->
 
-        <section class="sec_banner">
+        <section class="sec_banner" id="sec_banner">
             <div class="banner_box">
                 <div class="banner_list">
                     <div class="img_box">
@@ -135,7 +137,7 @@
         </section>
         <!-- sec_banner -->
 
-        <section class="sec_about">
+        <section class="sec_about" id="sec_about">
             <h3 class="area_title">
                 About
             </h3>
@@ -200,7 +202,7 @@
         </section>
         <!-- sec_about -->
 
-        <section class="sec_room_pre">
+        <section class="sec_room_pre" id="sec_room_pre">
             <div class="area_title">
                 ROOM PREVIEW
             </div>
@@ -223,7 +225,7 @@
                     </div>
                 </div>
                 <div class="room_pre_list">
-                    <a href="">
+                    <a href="./split-html/room02.html">
                         <div class="img_box">
                             <img src="./img/sea_room_pre_img02_mo.png" alt="">
                         </div>
@@ -240,7 +242,7 @@
                     </div>
                 </div>
                 <div class="room_pre_list">
-                    <a href="">
+                    <a href="./split-html/room03.html">
                         <div class="img_box">
                             <img src="./img/sea_room_pre_img03_mo.png" alt="">
                         </div>
@@ -257,7 +259,7 @@
                     </div>
                 </div>
                 <div class="room_pre_list">
-                    <a href="">
+                    <a href="./split-html/room04.html">
                         <div class="img_box">
                             <img src="./img/sea_room_pre_img04_mo.png" alt="">
                         </div>
@@ -274,7 +276,7 @@
                     </div>
                 </div>
                 <div class="room_pre_list">
-                    <a href="">
+                    <a href="./split-html/room05.html">
                         <div class="img_box">
                             <img src="./img/sea_room_pre_img05_mo.png" alt="">
                         </div>
@@ -290,6 +292,70 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- sec_room_pre -->
+
+        <section class="sec_info">
+            <div class="info_container">
+                <ul class="tab_title">
+                    <li class="on">펜션소개</li>
+                    <li>펜션전경</li>
+                </ul>
+            </div>
+            <div class="tab_cont">
+                <div class="on">
+                    <div class="img_box">
+                        <img src="./img/sea_info_main_mo.jpg" alt="">
+                    </div>
+                    <div class="info_txt">
+                        <p>
+                            안녕하세요.<br>
+                            대부도에 위치한 바닷가 힐링캠프 펜션입니다.<br>
+                            <span class="c_red">아름다운 석양</span>과 <span class="c_blue">향긋한 바다 향기</span>를 느끼며,<br>
+                            편안한 휴식을 취할 수 있는 곳,<br>
+                            독채형 펜션으로 우리들만의 공간이 되는 펜션<br>
+                            바닷가 힐링캠프 펜션에서 즐거운 추억을 쌓아보세요.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img_box">
+                        <img src="./img/sea_info_view_mo.jpg" alt="">
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/sea_info_view_mo.jpg" alt="">
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/sea_info_view_mo.jpg" alt="">
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/sea_info_view_mo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec_footer">
+            <div class="con_align">
+                <a class="align_list" href="javascripts:;">
+                    <div class="img_box">
+                        <img src="./img/sea_foot_call_mo.png" alt="">
+                    </div>
+                    <p>
+                        전화문의<br>
+                        PHONE INQUIRY
+                    </p>
+                </a>
+                <a class="align_list" href="javascripts:;" data-role="btnAnchor" data-target="#sec_banner" data-scroll="-300|-300">
+                    <div class="img_box">
+                        <img src="./img/sea_foot_up_mo.png" alt="">
+                    </div>
+                    <p>
+                        상단으로<br>
+                        TOP
+                    </p>
+                </a>
             </div>
         </section>
     </main>

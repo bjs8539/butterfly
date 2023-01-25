@@ -1,6 +1,10 @@
 
 .nowcar {
     p {margin: 0;}
+
+    #phone {position: fixed; @include vw-pc(bottom, 20); @include vw-pc(right, 20); @include vw-pc(width, 50); @include vw-pc(height, 50); @include vw-pc(line-height, 50); border-radius: 100%; background-color: #000; color: #fff; text-align: center;}
+    #phone a {width: 100%; height: 100%; display: block;}
+
     .sec_menu { background-color: #fff;
         .inner_1440 {
             display: flex; @include vw-pc(width, 1330);@include vw-pc(height, 142);justify-content: space-between; align-items: center;
@@ -36,33 +40,33 @@
     
     // sec_customer
     .sec_customer {
-        background-color: #f8f8f8;
-        .inner_1440 {
-            height: 100%;
+        .inner_1920 {
+            height: 100%;  background-color: #f8f8f8;
             .customer_wrap {
-                position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; @include vw-pc(height, 687); @include vw-pc(padding, 90 0); @include vw-pc(border-radius, 20); background-color: #fff;
-                .title {@include vw-pc(margin-bottom, 60); text-align: center;}
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); @include vw-pc(width, 1440); @include vw-pc(height, 687); @include vw-pc(padding, 125 0); @include vw-pc(border-radius, 20); background-color: #fff;
+                .title {@include vw-pc(margin-bottom, 40); text-align: center;}
                 .title h2 {margin-top: 0; @include vw-pc(margin-bottom, 20); @include vw-pc (font-size, 52);}
                 .title h2 span {color: #FF6624;}
                 .title p {@include vw-pc(font-size, 22);}
 
-                .regForm .regFormList {@include vw-pc(margin-bottom, 40);}
+                .regForm .regFormList {@include vw-pc(margin-bottom, 20);}
                 .regForm .regFormList ul {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
                 .regForm .regFormList ul li {position: relative; @include vw-pc(width, 565); @include vw-pc(height, 60); @include vw-pc(margin-bottom, 20); @include vw-pc(margin-right, 60);}
                 .regForm .regFormList ul li.wr_2,
                 .regForm .regFormList ul li.wr_4 {margin-right: 0;}
                 .regForm .regFormList ul li p {position: absolute; top: 50%; @include vw-pc(left, 28); transform: translateY(-50%); @include vw-pc(font-size, 20); color: #0F4B7D; font-weight: 700;}
-                .regForm .regFormList ul li input {width: 100%; height: 100%; @include vw-pc(padding-left, 150); @include vw-pc(border, 1 solid #0F4B7D); @include vw-pc(border-radius, 30);}
+                .regForm .regFormList ul li input {width: 100%; height: 100%; @include vw-pc(padding-left, 185); @include vw-pc(border, 1 solid #0F4B7D); @include vw-pc(border-radius, 30);}
 
-                .regForm .check_box {display: flex; justify-content: center; align-items: center; @include vw-pc(margin-bottom, 70); @include vw-pc(font-size, 20);}
+                .regForm .check_box {display: flex; justify-content: center; align-items: center; @include vw-pc(margin-bottom, 40); @include vw-pc(font-size, 20);}
                 .regForm .check_box .agree_check {display: flex; align-items: baseline;}
                 .regForm .check_box .agree_check1 {@include vw-pc(margin-right, 60);}
                 .regForm .check_box .agree_check input {@include vw-pc(width, 25); @include vw-pc(height, 25); @include vw-pc(margin-right, 10);}
+                .regForm .check_box .privacyView {font-weight: 700; cursor: pointer;}
 
                 .regForm .btn_box {text-align: center;}
                 .regForm .btn_box .apply_btn {@include vw-pc(width, 260); @include vw-pc(height, 60); @include vw-pc(font-size, 18); @include vw-pc(border-radius, 30); background-color: #0F4B7D; color: #fff; font-weight: 700;}
 
-                .regForm .regFormPrivacy {display: none; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; @include vw-pc(padding, 20); background-color: #fff;}
+                .regForm .regFormPrivacy {display: none; position: absolute; @include vw-pc(bottom, 20); left: 50%; transform: translateX(-50%); width: 90%; @include vw-pc(padding, 20); background-color: #fff; @include vw-pc(border, 1 solid #ccc); overflow-y: scroll;}
             }
         }
     }
@@ -88,14 +92,16 @@
                 .product_wrap li .txt_wrap .txt2 {@include vw-pc(margin-bottom, 20); @include vw-pc(font-size, 36); font-weight: 700;}
                 .product_wrap li .txt_wrap .txt2 .c_orange {color: #FF6624;}
                 .product_wrap li .txt_wrap .txt3 {@include vw-pc(margin-bottom, 30); @include vw-pc(font-size, 16); font-weight: 400;}
+
+                .product_wrap li .customer_btn {display: block; @include vw-pc(width, 379); @include vw-pc(height, 60); margin: 0 auto; @include vw-pc(font-size, 18); @include vw-pc(line-height, 60); background-color: #0F4B7D; @include vw-pc(border-radius, 30); text-align: center; color: #fff; font-weight: 700}
             }
         } 
     }
     // sec_special
 
     .sec_benefit {
-        @include vw-pc(margin-bottom, 268);
-        background-image: url(../../img/now_benefit_bg_pc.png); background-repeat: no-repeat; @include vw-max(background-size, 1920 2621); @include vw-max(max-width, 1920); @include vw-max(height, 2621);
+        @include vw-pc(margin, 0 auto 268);
+        background-image: url(../../img/now_benefit_bg_pc.png); background-repeat: no-repeat; @include vw-max(background-size, 1920 2621); @include vw-max(max-width, 1920); @include vw-max(height, 2621 !important);
         .inner_1920 {@include vw-max(width, 1440);
             > div {position: absolute;}
             .title_txt {top: 0; right: 0;@include vw-max(font-size, 48); @include vw-max(letter-spacing, -1); color: #0F4B7D; font-weight: 700;text-align: right;margin: 0;}
@@ -205,7 +211,7 @@
     }
 
     .sec_process {
-        background-image: url(../../img/now_process_bg_pc.png) ;background-repeat: no-repeat; @include vw-max(max-width, 1920); @include vw-max(height, 1216); @include vw-max(background-size, 1920 1216); @include vw-max(margin-bottom, 225);
+        background-image: url(../../img/now_process_bg_pc.png) ;background-repeat: no-repeat; @include vw-max(max-width, 1920); @include vw-max(height, 1216); @include vw-max(background-size, 1920 1216); @include vw-max(margin, 0 auto 225);
         .inner_1440 {
             @include vw-max(width, 1150);
             .content_align {
@@ -239,19 +245,22 @@
                 .main_txt {@include vw-pc(font-size, 52); @include vw-pc(letter-spacing, -2); font-weight: 700;}
                 .main_txt .c_orange {color: #F2630C}
             }
-            .review_swi {
-                @include vw-pc(width, 1250); overflow: hidden; @include vw-pc(margin, 0 auto);
-                .swiper_list {
-                    @include vw-pc(width, 400);@include vw-pc(height, 556);@include vw-pc(padding-top, 50); @include vw-pc(border-radius, 10); @include vw-pc(margin-right, 25); @include vw-pc(border, 1 solid #e3e3e3);background : #fff;
-                    .txt_con {
-                        @include vw-pc(padding, 20 40);
-                        .name_txt {@include vw-pc(font-size, 18); @include vw-pc(letter-spacing, -2); font-weight: 700; @include vw-pc(margin-bottom, 12);}
-                        .review_txt {@include vw-pc(font-size, 16); @include vw-pc(letter-spacing, -2); font-weight: 500; overflow: hidden;text-overflow: ellipsis;white-space: normal;@include vw-pc(line-height, 24);@include vw-pc(height, 170);text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 7 ;-webkit-box-orient: vertical;}
+            .review_slide {
+                position: relative;
+                .review_swi {
+                    @include vw-pc(width, 1250);  @include vw-pc(margin, 0 auto);
+                    .swiper_list {
+                        @include vw-pc(width, 400);@include vw-pc(height, 556);@include vw-pc(padding-top, 50); @include vw-pc(border-radius, 10); @include vw-pc(margin-right, 25); @include vw-pc(border, 1 solid #e3e3e3);background : #fff;
+                        .txt_con {
+                            @include vw-pc(padding, 20 40);
+                            .name_txt {@include vw-pc(font-size, 18); @include vw-pc(letter-spacing, -2); font-weight: 700; @include vw-pc(margin-bottom, 12);}
+                            .review_txt {@include vw-pc(font-size, 16); @include vw-pc(letter-spacing, -2); font-weight: 500; overflow: hidden;text-overflow: ellipsis;white-space: normal;@include vw-pc(line-height, 24);@include vw-pc(height, 170);text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 7 ;-webkit-box-orient: vertical;}
+                        }
                     }
                 }
                 .swiper-button-next, .swiper-button-prev {
                     background-color: #fff;
-                    @include vw-pc(border, 1 solid #ccc); @include vw-pc(width, 75); @include vw-pc(height, 75); border-radius: 50%; @include vw-pc(top, 400);
+                    @include vw-pc(border, 1 solid #ccc); @include vw-pc(width, 75); @include vw-pc(height, 75); border-radius: 50%; top: 53%; transform: translateY(-50%);
                 }
                 .swiper-button-prev {@include vw-pc(left, -5);}
                 .swiper-button-next {@include vw-pc(right, -5);}
@@ -276,7 +285,7 @@
     // sec_coper
 
     .sec_footer {
-        background-color: #000; text-align: center; color: #fff; @include vw-pc(height, 460); @include vw-pc(padding-top, 114);
+        background-color: #000; text-align: center; color: #fff; @include vw-pc(height, 460); @include vw-pc(padding, 114 0);
         .img_box {
             @include vw-pc(width, 144); @include vw-pc(margin, 0 auto 55);
         }
@@ -288,6 +297,9 @@
 @media screen and (max-width: 768px) {
     .nowcar {
         overflow: hidden;
+
+        #phone {position: fixed; @include vw-mo(bottom, 20); @include vw-mo(right, 20); @include vw-mo(width, 50); @include vw-mo(height, 50); @include vw-mo(line-height, 50); background-color: #000; color: #fff; text-align: center;}
+
         .sec_menu {
             .inner_1440 {
                 display: flex; width: 100%;@include vw-mo(height, 140);justify-content: space-between; align-items: center; @include vw-mo(padding, 0 65);
@@ -318,11 +330,74 @@
                 }
             }
         }
-        // sec_kv         
+        // sec_kv    
+        
+        // sec_customer
+        .sec_customer {
+            .inner_1920 {
+                .customer_wrap {
+                    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); @include vw-mo(width, 600); @include vw-mo(height, 890); @include vw-mo(padding, 135 0); @include vw-mo(border-radius, 20);
+                    .title {@include vw-mo(margin-bottom, 20); text-align: center;}
+                    .title h2 {margin-top: 0; @include vw-mo(margin-bottom, 20); @include vw-mo (font-size, 38);}
+                    .title h2 span {color: #FF6624;}
+                    .title p {@include vw-mo(font-size, 18);}
+
+                    .regForm .regFormList {@include vw-mo(margin-bottom, 20);}
+                    .regForm .regFormList ul {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+                    .regForm .regFormList ul li {position: relative; @include vw-mo(width, 526); @include vw-mo(height, 60); @include vw-mo(margin-bottom, 20); @include vw-mo(margin-right, 0);}
+                    .regForm .regFormList ul li.wr_2,
+                    .regForm .regFormList ul li.wr_4 {margin-right: 0;}
+                    .regForm .regFormList ul li p {position: absolute; top: 50%; @include vw-mo(left, 28); transform: translateY(-50%); @include vw-mo(font-size, 20); color: #0F4B7D; font-weight: 700;}
+                    .regForm .regFormList ul li input {width: 100%; height: 100%; @include vw-mo(padding-left, 180); @include vw-mo(border, 1 solid #0F4B7D); @include vw-mo(border-radius, 30);}
+                    .regForm .regFormList ul li input::placeholder {@include vw-mo(font-size, 12);}
+
+                    .regForm .check_box {display: block; justify-content: center; align-items: center; @include vw-mo(margin-bottom, 40); @include vw-mo(font-size, 20);}
+                    .regForm .check_box .agree_check {display: flex; align-items: baseline; justify-content: center;}
+                    .regForm .check_box .agree_check span {text-align: center; @include vw-mo(line-height, 30);}
+                    .regForm .check_box .agree_check1 {@include vw-mo(margin-right, 0); @include vw-mo(margin-bottom, 30);}
+                    .regForm .check_box .agree_check input {@include vw-mo(width, 25); @include vw-mo(height, 25); @include vw-mo(margin-right, 10);}
+                    .regForm .check_box .privacyView {font-weight: 700; cursor: pointer;}
+
+                    .regForm .btn_box {text-align: center;}
+                    .regForm .btn_box .apply_btn {@include vw-mo(width, 260); @include vw-mo(height, 60); @include vw-mo(font-size, 18); @include vw-mo(border-radius, 30); background-color: #0F4B7D; color: #fff; font-weight: 700;}
+
+                    .regForm .regFormPrivacy {display: none; position: absolute; @include vw-mo(bottom, 20); left: 50%; transform: translateX(-50%); width: 90%; @include vw-mo(height, 400); @include vw-mo(padding, 20); @include vw-mo(font-size, 16); background-color: #fff; @include vw-mo(border, 1 solid #ccc); overflow-y: scroll;}
+                    .regForm .regFormPrivacy .regFormPrivacyCont {@include vw-mo(font-size, 12);}
+                }
+            }
+        }
+        // sec_customer
+
+        // sec_special
+        .sec_special {
+            .inner_1440 {
+                .special_wrap {
+                    @include vw-mo(padding, 148 0);
+                    .title_wrap {@include vw-mo(margin-bottom, 88); text-align: center;}
+                    .title_wrap .title {@include vw-mo(margin-bottom, 26); @include vw-mo(font-size, 52);}
+                    .title_wrap .txt {@include vw-mo(font-size, 24);}
+
+                    .product_wrap {display: flex; flex-wrap: wrap;}
+                    .product_wrap li {@include vw-mo(width, 593); @include vw-mo(height, 544); @include vw-mo(margin-right, 0); @include vw-mo(margin, 0 auto 45); @include vw-mo(padding-top, 15); @include vw-mo(box-shadow, 3 3 13 rgba(0,0,0,0.1));}
+                    .product_wrap li:nth-child(3n+0) {margin-right: auto;}
+                    .product_wrap li .img_box {@include vw-mo(margin-bottom, 0);}
+
+                    .product_wrap li .txt_wrap {@include vw-mo(padding, 0 60);}
+                    .product_wrap li .txt_wrap .txt {display: flex; justify-content: space-between; align-items: flex-end; letter-spacing: -0.01em;}
+                    .product_wrap li .txt_wrap .txt1 {@include vw-mo(margin-bottom, 10); @include vw-mo(font-size, 22); color: #444; font-weight: 700;}
+                    .product_wrap li .txt_wrap .txt2 {@include vw-mo(margin-bottom, 20); @include vw-mo(font-size, 42); font-weight: 700;}
+                    .product_wrap li .txt_wrap .txt2 .c_orange {color: #FF6624;}
+                    .product_wrap li .txt_wrap .txt3 {@include vw-mo(margin-bottom, 30); @include vw-mo(font-size, 18); font-weight: 400;}
+
+                    .product_wrap li .customer_btn {@include vw-mo(width, 482); @include vw-mo(height, 65); @include vw-mo(font-size, 22); @include vw-mo(line-height, 65); background-color: #0F4B7D; @include vw-mo(border-radius, 30); text-align: center;}
+                }
+            } 
+        }
+        // sec_special
     
         .sec_benefit {
             @include vw-mo(margin-bottom, 90);
-            background-image: url(../../img/now_benefit_bg_mo.png); background-repeat: no-repeat; background-size: 100%; width: 100%; @include vw-mo(height, 3627);
+            background-image: url(../../img/now_benefit_bg_mo.png); background-repeat: no-repeat; background-size: 100%; width: 100%; @include vw-mo(height, 3627 !important);
             .inner_1920 {width: 100%;
                 > div {position: absolute;}
                 .title_txt {@include vw-mo(top, -70); @include vw-mo(right, 45);@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -1); color: #0F4B7D; font-weight: 700;text-align: right;margin: 0; @include vw-mo(line-height, 75);}
@@ -461,7 +536,7 @@
             @include vw-mo(padding-bottom, 130);
             .inner_1440 {
                 .title_box {
-                    text-align: center; @include vw-mo(margin-bottom, 50);
+                    text-align: center; @include vw-mo(margin-bottom, 80);
                     .sub_txt {@include vw-mo(font-size, 24); @include vw-mo(letter-spacing, -2); font-weight: 500; @include vw-mo(margin-bottom, 25);}
                     .main_txt {@include vw-mo(font-size, 52); @include vw-mo(letter-spacing, -2); font-weight: 700; @include vw-mo(line-height, 60);}
                     .main_txt .c_orange {color: #F2630C}

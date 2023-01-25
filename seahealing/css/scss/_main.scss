@@ -8,14 +8,36 @@
         .area_title::after {position: absolute; content: ''; @include vw-mo(height, 2.5); @include vw-mo(width, 110); background-color:#ddd; left: 50%; transform: translateX(-50%); @include vw-mo(bottom, 60);} 
         
         .sec_gnb {
-            @include vw-mo(margin-bottom, 20);
+            @include vw-mo(margin-bottom, 20);@include vw-mo(height, 270);
+            .gnb_fixed {position: fixed; width: 100%; z-index: 50; background-color: #fff}
             .logo_area {@include vw-mo(height, 120); position: relative;}
             .logo_area a {display: flex; position: absolute}
             .logo_btn {@include vw-mo(width, 170); top: 50%; left:50%;transform: translate(-50%, -50%)}
             .reserve_btn {@include vw-mo(width, 120);top: 50%; right: 5%;transform: translateY(-50%); flex-direction: column; align-items: center;}
             .reserve_btn .img_box {@include vw-mo(width, 81);}
         }
+        .sec_gnb::after {@include vw-mo(height, 500); width: 100%;}
         // logo_area, reserve_btn
+
+        .sec_footer {
+            .con_align {
+                display: flex; position: relative;
+                .align_list {
+                    display: flex; flex-direction: row; width: 50%; justify-content: center; @include vw-mo(height, 150); align-items: center;
+                    .img_box {@include vw-mo(width, 50);@include vw-mo(margin-right, 15);}
+                    p {@include vw-mo(font-size, 24); @include vw-mo(line-height, 28);}
+                }
+            }
+            .con_align::after {position: absolute; content: ''; background-image: url(../../img/sea_foot_line_mo.png); background-repeat: no-repeat; @include vw-mo(background-size, 50 50); @include vw-mo(width, 50); @include vw-mo(height, 50); top: 50%; left: 50%;transform: translate(-50%, -50%);}
+        }
+        .tab_title {
+            display: flex; @include vw-mo(margin, 15 0);
+            li {background-color: #ebebeb; @include vw-mo(font-size, 26); width: 100%; @include vw-mo(height, 60); display: flex;align-items: center; justify-content: center;}
+            li.on {background-color: #5a5a5a; color: #fff;}
+        }
+        .tab_cont > div.on {display: block;}
+        .tab_cont > div {display: none;}
+        // tab 공통
 
         .menu_area {
             .menu_box {
@@ -138,6 +160,39 @@
                     }
                 }
             }
+        }
+        // room_detail
+
+        .sec_info {
+            .tab_cont {
+                .img_box {@include vw-mo(margin-bottom, 30);}
+                .info_txt {
+                    p {@include vw-mo(font-size, 28); @include vw-mo(line-height, 62);}
+                    .c_red {color: #d50c14;}
+                    .c_blue {color: #847ed4}
+                }
+            }
+        }
+        // sec_info
+
+        .sec_facilities {
+            .img_box {@include vw-mo(margin-bottom, 20);}
+            .info_txt {@include vw-mo(margin-bottom, 200);}
+            .info_txt > p{@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); }
+            .info_txt .sub_txt_box {
+                @include vw-mo(margin-top, 40);
+                p {@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); font-weight: 700;}
+                span {@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); }
+            }
+        }
+        // sec_facilities
+
+        .sec_service {
+            .img_box {@include vw-mo(margin-bottom, 20);}
+            .info_txt > p{@include vw-mo(font-size, 28); @include vw-mo(line-height, 42); @include vw-mo(padding, 0 20 40);text-align: left;}
+            .tab_title {flex-wrap: wrap;}
+            .tab_title li {width: 33.333%;}
+            .name_txt {@include vw-mo(font-size, 38); font-weight: 700; @include vw-mo(margin-bottom, 40);}
         }
     }
 }

@@ -31,6 +31,8 @@
                 var scroll = [1,1];
                 var dataScroll = $this.attr('data-scroll');
                 
+                console.log('눌렀따');
+
                 if (dataScroll) {
                     dataScroll = dataScroll.split('|');
                     scroll[0] = dataScroll[0];
@@ -97,10 +99,21 @@
             });
         },
 
+        tabEvt: function() {
+            $('.tab_title li').on('click' , function() {
+                var idx = $(this).index();
+                $(".tab_title li").removeClass("on");
+                $(".tab_title li").eq(idx).addClass("on");
+                $(".tab_cont > div").hide();
+                $(".tab_cont > div").eq(idx).show();
+            })
+        },
+
 
         init: function() {
             this.anchorEvt();
             this.bannerSwiper();
+            this.tabEvt();
         }
     };
 
