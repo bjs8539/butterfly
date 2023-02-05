@@ -53,7 +53,8 @@
 
             // 페이지 접속시 앵커드 처리 - 필요하면 변경해서 사용
             var paramsData = {
-                test01: {el:$('.sec_anchor')},
+                about: {el:$('#sec_about')},
+                rooms: {el:$('#sec_room_pre')},
                 test02: {el:$('.sec_accordian'), scroll:[0, -50]}
             }
 

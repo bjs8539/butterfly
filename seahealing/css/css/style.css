@@ -505,11 +505,330 @@
   .seahealing .sec_service .tab_title li {
     width: 33.333%;
   }
-  .seahealing .sec_service .name_txt {
+  .seahealing .sec_travel .travel_container .tab_title {
+    flex-wrap: wrap;
+  }
+  .seahealing .sec_travel .travel_container .tab_title li {
+    width: 33.333%;
+  }
+  .seahealing .sec_travel .tab_cont .info_txt > p {
+    font-size: 28px;
+    font-size: 3.8888888889vw;
+    line-height: 42px;
+    line-height: 5.8333333333vw;
+    padding: 0px 20px 40px;
+    padding: 0vw 2.7777777778vw 5.5555555556vw;
+    text-align: left;
+  }
+  .seahealing .sec_travel .tab_cont .img_box {
+    margin-bottom: 20px;
+    margin-bottom: 2.7777777778vw;
+  }
+  .seahealing .sec_travel .tab_cont .name_txt {
     font-size: 38px;
     font-size: 5.2777777778vw;
     font-weight: 700;
     margin-bottom: 40px;
     margin-bottom: 5.5555555556vw;
+  }
+  .seahealing .sec_reservation .reservation_container .tab_title {
+    flex-wrap: wrap;
+  }
+  .seahealing .sec_reservation .reservation_container .tab_title li {
+    width: 33.333%;
+  }
+  .seahealing .sec_reservation .tab_cont .img_box {
+    margin-bottom: 20px;
+    margin-bottom: 2.7777777778vw;
+  }
+  .seahealing .sec_reservation .tab_cont .name_txt {
+    font-size: 38px;
+    font-size: 5.2777777778vw;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-bottom: 5.5555555556vw;
+  }
+  .seahealing .sec_reservation .title_txt {
+    font-size: 34px;
+    font-size: 4.7222222222vw;
+    font-weight: 700;
+    position: relative;
+    margin-top: 50px;
+    margin-top: 6.9444444444vw;
+    margin-bottom: 60px;
+    margin-bottom: 8.3333333333vw;
+  }
+  .seahealing .sec_reservation .title_txt::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    width: 34.7222222222vw;
+    height: 4px;
+    height: 0.5555555556vw;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #000;
+    bottom: -20px;
+    bottom: -2.7777777778vw;
+  }
+  .seahealing .sec_reservation .contents_area {
+    padding: 0px 30px;
+    padding: 0vw 4.1666666667vw;
+  }
+  .seahealing .sec_reservation .contents_area .season_box {
+    margin-bottom: 80px;
+    margin-bottom: 11.1111111111vw;
+  }
+  .seahealing .sec_reservation .contents_area .season_box .season {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 0.1388888889vw solid #ddd;
+    padding-bottom: 25px;
+    padding-bottom: 3.4722222222vw;
+    padding-left: 10px;
+    padding-left: 1.3888888889vw;
+    margin-bottom: 25px;
+    margin-bottom: 3.4722222222vw;
+  }
+  .seahealing .sec_reservation .contents_area .season_box .season .season_txt {
+    font-size: 24px;
+    font-size: 3.3333333333vw;
+    font-weight: 700;
+    position: relative;
+  }
+  .seahealing .sec_reservation .contents_area .season_box .season .season_txt::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    height: 0.5555555556vw;
+    background-color: #333333;
+    width: 80px;
+    width: 11.1111111111vw;
+    bottom: -15px;
+    bottom: -2.0833333333vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .seahealing .sec_reservation .contents_area .season_box .add_txt {
+    font-size: 18px;
+    font-size: 2.5vw;
+    color: #555;
+    text-align: right;
+    letter-spacing: 1px;
+    letter-spacing: 0.1388888889vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box {
+    text-align: left;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .info_name {
+    margin-bottom: 20px;
+    margin-bottom: 2.7777777778vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .info_name .name_txt {
+    font-size: 26px;
+    font-size: 3.6111111111vw;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-bottom: 0.6944444444vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .info_name .person_txt {
+    font-size: 22px;
+    font-size: 3.0555555556vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info {
+    margin-bottom: 100px;
+    margin-bottom: 13.8888888889vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    height: 13.8888888889vw;
+    border-top: 1px solid #ddd;
+    border-top: 0.1388888889vw solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 0.1388888889vw solid #ddd;
+    background-color: #f4f4f4;
+    align-items: center;
+    text-align: center;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li {
+    font-size: 22px;
+    font-size: 3.0555555556vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li .sub_txt {
+    font-size: 20px;
+    font-size: 2.7777777778vw;
+    color: #555;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li:nth-child(1) {
+    width: 45%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li:nth-child(2) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li:nth-child(3) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_list ul li:nth-child(4) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    height: 11.1111111111vw;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 0.1388888889vw solid #ddd;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul li {
+    font-size: 22px;
+    font-size: 3.0555555556vw;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul li:nth-child(1) {
+    width: 45%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul li:nth-child(2) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul li:nth-child(3) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt ul li:nth-child(4) {
+    width: 18.333%;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt .c_blue {
+    color: #367fb4;
+  }
+  .seahealing .sec_reservation .contents_area .info_box .price_info .price_txt .c_red {
+    color: #b95f5e;
+  }
+  .seahealing .sec_reservation .contents_area .period_info {
+    margin-bottom: 150px;
+    margin-bottom: 20.8333333333vw;
+    text-align: left;
+  }
+  .seahealing .sec_reservation .contents_area .period_info .period_name {
+    font-size: 26px;
+    font-size: 3.6111111111vw;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    border-bottom: 0.1388888889vw solid #000;
+    padding-bottom: 30px;
+    padding-bottom: 4.1666666667vw;
+    margin-bottom: 40px;
+    margin-bottom: 5.5555555556vw;
+  }
+  .seahealing .sec_reservation .contents_area .period_info .sub_txt {
+    font-size: 22px;
+    font-size: 3.0555555556vw;
+    letter-spacing: 1px;
+    letter-spacing: 0.1388888889vw;
+    color: #555;
+  }
+  .seahealing .sec_reservation .info_dec {
+    text-align: left;
+    padding: 0px 20px;
+    padding: 0vw 2.7777777778vw;
+  }
+  .seahealing .sec_reservation .info_dec li {
+    font-size: 28px;
+    font-size: 3.8888888889vw;
+    padding-left: 14px;
+    padding-left: 1.9444444444vw;
+    text-indent: -14px;
+    text-indent: -1.9444444444vw;
+    line-height: 38px;
+    line-height: 5.2777777778vw;
+  }
+  .seahealing .sec_reservation .sub_main_txt {
+    font-size: 30px;
+    font-size: 4.1666666667vw;
+    color: red;
+    text-align: left;
+    padding-left: 20px;
+    padding-left: 2.7777777778vw;
+    line-height: 40px;
+    line-height: 5.5555555556vw;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-bottom: 5.5555555556vw;
+  }
+  .seahealing .sec_reservation .cansel_info {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .seahealing .sec_reservation .cansel_info dl {
+    border: 1px solid #ccc;
+    border: 0.1388888889vw solid #ccc;
+  }
+  .seahealing .sec_reservation .cansel_info dl:last-child {
+    color: red;
+  }
+  .seahealing .sec_reservation .cansel_info dl dt {
+    font-size: 27px;
+    font-size: 3.75vw;
+    width: 230px;
+    width: 31.9444444444vw;
+    padding: 20px 0px;
+    padding: 2.7777777778vw 0vw;
+    background-color: #bcbcbc;
+    line-height: 40px;
+    line-height: 5.5555555556vw;
+    height: 120px;
+    height: 16.6666666667vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seahealing .sec_reservation .cansel_info dl dd {
+    font-size: 27px;
+    font-size: 3.75vw;
+    width: 230px;
+    width: 31.9444444444vw;
+    margin: 0px;
+    margin: 0vw;
+    padding: 35px 0px;
+    padding: 4.8611111111vw 0vw;
+    line-height: 40px;
+    line-height: 5.5555555556vw;
+  }
+  .seahealing .sec_traffic .way_box {
+    margin-bottom: 40px;
+    margin-bottom: 5.5555555556vw;
+  }
+  .seahealing .sec_traffic .way_box:first-child {
+    padding-top: 50px;
+    padding-top: 6.9444444444vw;
+  }
+  .seahealing .sec_traffic .way_box .name_box {
+    font-size: 28px;
+    font-size: 3.8888888889vw;
+    color: #74602e;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-bottom: 4.1666666667vw;
+  }
+  .seahealing .sec_traffic .way_box .name_box .num_t {
+    color: #fca70e;
+    font-size: 32px;
+    font-size: 4.4444444444vw;
+  }
+  .seahealing .sec_traffic .way_box .add_txt {
+    font-weight: 700;
+    font-size: 28px;
+    font-size: 3.8888888889vw;
+    margin-bottom: 15px;
+    margin-bottom: 2.0833333333vw;
+  }
+  .seahealing .sec_traffic .way_box .sub_txt {
+    font-size: 28px;
+    font-size: 3.8888888889vw;
+    line-height: 40px;
+    line-height: 5.5555555556vw;
   }
 }/*# sourceMappingURL=style.css.map */
