@@ -1,0 +1,314 @@
+
+@media screen and (max-width: 768px) {
+    .seahealing {
+        h3 {padding: 0; margin: 0;}
+        overflow: hidden; text-align: center;
+
+        .area_title {position: relative; @include vw-mo(font-size, 52); font-weight: 400; color: #4b4b4b; @include vw-mo(padding, 150 0 110);}
+        .area_title::after {position: absolute; content: ''; @include vw-mo(height, 2.5); @include vw-mo(width, 110); background-color:#ddd; left: 50%; transform: translateX(-50%); @include vw-mo(bottom, 60);} 
+        
+        .sec_gnb {
+            @include vw-mo(margin-bottom, 20);@include vw-mo(height, 270);
+            .gnb_fixed {position: fixed; width: 100%; z-index: 50; background-color: #fff}
+            .logo_area {@include vw-mo(height, 120); position: relative;}
+            .logo_area a {display: flex; position: absolute}
+            .logo_btn {@include vw-mo(width, 170); top: 50%; left:50%;transform: translate(-50%, -50%)}
+            .reserve_btn {@include vw-mo(width, 120);top: 50%; right: 5%;transform: translateY(-50%); flex-direction: column; align-items: center;}
+            .reserve_btn .img_box {@include vw-mo(width, 81);}
+        }
+        .sec_gnb::after {@include vw-mo(height, 500); width: 100%;}
+        // logo_area, reserve_btn
+
+        .sec_footer {
+            .con_align {
+                display: flex; position: relative;
+                .align_list {
+                    display: flex; flex-direction: row; width: 50%; justify-content: center; @include vw-mo(height, 150); align-items: center;
+                    .img_box {@include vw-mo(width, 50);@include vw-mo(margin-right, 15);}
+                    p {@include vw-mo(font-size, 24); @include vw-mo(line-height, 28);}
+                }
+            }
+            .con_align::after {position: absolute; content: ''; background-image: url(../../img/sea_foot_line_mo.png); background-repeat: no-repeat; @include vw-mo(background-size, 50 50); @include vw-mo(width, 50); @include vw-mo(height, 50); top: 50%; left: 50%;transform: translate(-50%, -50%);}
+        }
+        .tab_title {
+            display: flex; @include vw-mo(margin, 15 0);
+            li {background-color: #ebebeb; @include vw-mo(font-size, 26); width: 100%; @include vw-mo(height, 60); display: flex;align-items: center; justify-content: center;}
+            li.on {background-color: #5a5a5a; color: #fff;}
+        }
+        .tab_cont > div.on {display: block;}
+        .tab_cont > div {display: none;}
+        // tab 공통
+
+        .menu_area {
+            .menu_box {
+                background-color: #f1f2f6; flex-wrap: wrap; @include vw-mo(height, 150);
+                .menu_align {display: flex; justify-content: center; width: 100%; }
+                .menu_list {font-weight: 400; @include vw-mo(font-size, 24); @include vw-mo(padding, 25 30); text-align: center;}
+            }
+        }
+        // menu_area
+
+        .sec_banner {
+            .banner-swiper {position: relative;}
+            .banner_list {width: 100%; @include vw-mo(margin-bottom, 5);}
+            .swiper-pagination-bullet {opacity: 0.5;}
+
+            .swiper-button-next {
+                background: url(../../img/sea_right_i_mo.png) no-repeat;
+                background-size: 100% auto;
+                background-position: center;
+            }
+              
+            .swiper-button-prev {
+            background: url(../../img/sea_left_i_mo.png) no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            }
+              
+            .swiper-button-next::after,
+            .swiper-button-prev::after {
+            display: none;
+            }
+        }
+        // sec_banner
+
+        .sec_about {
+            @include vw-mo(padding, 0 20);
+            .about_txt {
+                text-align: center; @include vw-mo(line-height, 72); @include vw-mo(font-size, 28); @include vw-mo(margin-bottom, 70);
+                .c_red {color:#b51c17;}
+                .c_blue {color:#544e96;}
+            }
+            .facilities_list {
+                display: flex; @include vw-mo(margin-bottom, 30); justify-content: space-between; align-items: center;
+                .img_box {width: 48%;}
+                .facilities_txt {width: 48%;text-align: center;}
+                .facilities_txt .title{@include vw-mo(font-size, 30); font-weight: 700; @include vw-mo(margin-bottom, 20);}
+                .facilities_txt .sub_txt{@include vw-mo(font-size, 26); @include vw-mo(line-height, 32);}
+                .facilities_txt .add_txt{@include vw-mo(font-size, 26); @include vw-mo(line-height, 32); @include vw-mo(margin-top, 20);}
+            }
+        }
+        // sec_about
+
+        .sec_room_pre {
+            .room_pre_box {
+                @include vw-mo(padding, 0 15);
+                display: flex; justify-content: space-between; flex-wrap: wrap;
+                .room_pre_list {@include vw-mo(width, 337); @include vw-mo(margin-bottom, 50);}
+                .room_pre_list:nth-child(odd) {@include vw-mo(margin-right, 15);}
+                .room_pre_list .img_box {@include vw-mo(margin-bottom, 10);}
+                .room_pre_list .room_txt {
+                    .name_txt {@include vw-mo(font-size, 32); font-weight: 700; @include vw-mo(margin-bottom, 5);}
+                    .room_info {
+                        @include vw-mo(font-size, 24); @include vw-mo(line-height, 34);
+                    }
+                }
+                
+            }
+        }
+        // sec_room_pre
+
+        .room_detail {
+            @include vw-mo(margin-top, 20);
+            .main_img {@include vw-mo(margin-bottom, 60);}
+            .contents_area {
+                @include vw-mo(padding,0 30);
+                .season_box {
+                    @include vw-mo(margin-bottom, 80);
+                    .season {display: flex; @include vw-mo(border-bottom, 1 solid #ddd); @include vw-mo(padding-bottom, 25); @include vw-mo(padding-left, 10); @include vw-mo(margin-bottom, 25);}
+                    .season .season_txt {@include vw-mo(font-size, 24); font-weight: 700; position: relative}
+                    .season .season_txt::after{position: absolute; content: ''; @include vw-mo(height, 4); background-color: #333333; @include vw-mo(width, 80); @include vw-mo(bottom, -15); left: 50%; transform: translateX(-50%);}
+                    .add_txt {@include vw-mo(font-size, 18); color: #555; text-align: right; @include vw-mo(letter-spacing, 1);}
+
+                }
+                .info_box {
+                    text-align: left;
+                    .info_name {
+                        @include vw-mo(margin-bottom, 20);
+                        .name_txt {@include vw-mo(font-size, 26); font-weight: 700; @include vw-mo(margin-bottom, 5);}
+                        .person_txt {@include vw-mo(font-size, 22);}
+                    }
+                    .price_info {
+                        @include vw-mo(margin-bottom, 100);
+                        .price_list ul {display: flex; flex-direction: row; justify-content: space-between; @include vw-mo(height, 100);@include vw-mo(border-top, 1 solid #ddd); @include vw-mo(border-bottom, 1 solid #ddd); background-color: #f4f4f4; align-items: center; text-align: center;}
+                        .price_list ul li {@include vw-mo(font-size, 22);}
+                        .price_list ul li .sub_txt{@include vw-mo(font-size, 20); color: #555;}
+                        .price_list ul li:nth-child(1) {width:45%;}
+                        .price_list ul li:nth-child(2) {width:18.333%;}
+                        .price_list ul li:nth-child(3) {width:18.333%;}
+                        .price_list ul li:nth-child(4) {width:18.333%;}
+
+                        .price_txt {
+                            ul {display: flex; flex-direction: row; justify-content: space-between; @include vw-mo(height, 80); align-items: center; text-align: center; @include vw-mo(border-bottom, 1 solid #ddd);}
+                            ul li {@include vw-mo(font-size, 22);}
+                            ul li:nth-child(1) {width:45%;}
+                            ul li:nth-child(2) {width:18.333%;}
+                            ul li:nth-child(3) {width:18.333%;}
+                            ul li:nth-child(4) {width:18.333%;}
+                            .c_blue {color:#367fb4}
+                            .c_red {color:#b95f5e}
+                        }
+                    }
+                    .period_info {
+                        @include vw-mo(margin-bottom, 150);
+                        .period_name {
+                            @include vw-mo(font-size, 26); font-weight: 700; @include vw-mo(border-bottom, 1 solid #000); @include vw-mo(padding-bottom, 30); @include vw-mo(margin-bottom, 40);
+                        }
+                        .sub_txt {
+                            @include vw-mo(font-size, 22); @include vw-mo(letter-spacing, 1); color: #555;
+                        }
+                    }
+                }
+            }
+        }
+        // room_detail
+
+        .sec_info {
+            .tab_cont {
+                .img_box {@include vw-mo(margin-bottom, 30);}
+                .info_txt {
+                    p {@include vw-mo(font-size, 28); @include vw-mo(line-height, 62);}
+                    .c_red {color: #d50c14;}
+                    .c_blue {color: #847ed4}
+                }
+            }
+        }
+        // sec_info
+
+        .sec_facilities {
+            .img_box {@include vw-mo(margin-bottom, 20);}
+            .info_txt {@include vw-mo(margin-bottom, 200);}
+            .info_txt > p{@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); }
+            .info_txt .sub_txt_box {
+                @include vw-mo(margin-top, 40);
+                p {@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); font-weight: 700;}
+                span {@include vw-mo(font-size, 28); @include vw-mo(line-height, 34); }
+            }
+        }
+        // sec_facilities
+
+        .sec_service {
+            .img_box {@include vw-mo(margin-bottom, 20);}
+            .info_txt > p{@include vw-mo(font-size, 28); @include vw-mo(line-height, 42); @include vw-mo(padding, 0 20 40);text-align: left;}
+            .tab_title {flex-wrap: wrap;}
+            .tab_title li {width: 33.333%;}
+        }
+        // sec_service
+
+        .sec_travel {
+            .travel_container {
+                .tab_title {flex-wrap: wrap;}
+                .tab_title li {width: 33.333%;}
+            }
+            .tab_cont {
+                .info_txt > p{@include vw-mo(font-size, 28); @include vw-mo(line-height, 42); @include vw-mo(padding, 0 20 40);text-align: left;}
+                .img_box {@include vw-mo(margin-bottom, 20);}
+                .name_txt {@include vw-mo(font-size, 38); font-weight: 700; @include vw-mo(margin-bottom, 40);}
+            }
+        }
+
+        .sec_reservation {
+            .reservation_container {
+                .tab_title {flex-wrap: wrap;}
+                .tab_title li {width: 33.333%;}
+            }
+            .tab_cont {
+                .img_box {@include vw-mo(margin-bottom, 20);}
+                .name_txt {@include vw-mo(font-size, 38); font-weight: 700; @include vw-mo(margin-bottom, 40); }
+            }
+            .title_txt {
+                @include vw-mo(font-size, 34); font-weight: 700;position: relative; @include vw-mo(margin-top, 50);@include vw-mo(margin-bottom, 60);
+            }
+            .title_txt::after {content: '';position: absolute; @include vw-mo(width, 250); @include vw-mo(height, 4); transform: translateX(-50%);left:50%; background-color: #000;@include vw-mo(bottom, -20);}
+            .contents_area {
+                @include vw-mo(padding,0 30); 
+                .season_box {
+                    @include vw-mo(margin-bottom, 80);
+                    .season {display: flex; @include vw-mo(border-bottom, 1 solid #ddd); @include vw-mo(padding-bottom, 25); @include vw-mo(padding-left, 10); @include vw-mo(margin-bottom, 25);}
+                    .season .season_txt {@include vw-mo(font-size, 24); font-weight: 700; position: relative}
+                    .season .season_txt::after{position: absolute; content: ''; @include vw-mo(height, 4); background-color: #333333; @include vw-mo(width, 80); @include vw-mo(bottom, -15); left: 50%; transform: translateX(-50%);}
+                    .add_txt {@include vw-mo(font-size, 18); color: #555; text-align: right; @include vw-mo(letter-spacing, 1);}
+
+                }
+                .info_box {
+                    text-align: left;
+                    .info_name {
+                        @include vw-mo(margin-bottom, 20);
+                        .name_txt {@include vw-mo(font-size, 26); font-weight: 700; @include vw-mo(margin-bottom, 5);}
+                        .person_txt {@include vw-mo(font-size, 22);}
+                    }
+                    .price_info {
+                        @include vw-mo(margin-bottom, 100);
+                        .price_list ul {display: flex; flex-direction: row; justify-content: space-between; @include vw-mo(height, 100);@include vw-mo(border-top, 1 solid #ddd); @include vw-mo(border-bottom, 1 solid #ddd); background-color: #f4f4f4; align-items: center; text-align: center;}
+                        .price_list ul li {@include vw-mo(font-size, 22);}
+                        .price_list ul li .sub_txt{@include vw-mo(font-size, 20); color: #555;}
+                        .price_list ul li:nth-child(1) {width:45%;}
+                        .price_list ul li:nth-child(2) {width:18.333%;}
+                        .price_list ul li:nth-child(3) {width:18.333%;}
+                        .price_list ul li:nth-child(4) {width:18.333%;}
+
+                        .price_txt {
+                            ul {display: flex; flex-direction: row; justify-content: space-between; @include vw-mo(height, 80); align-items: center; text-align: center; @include vw-mo(border-bottom, 1 solid #ddd);}
+                            ul li {@include vw-mo(font-size, 22);}
+                            ul li:nth-child(1) {width:45%;}
+                            ul li:nth-child(2) {width:18.333%;}
+                            ul li:nth-child(3) {width:18.333%;}
+                            ul li:nth-child(4) {width:18.333%;}
+                            .c_blue {color:#367fb4}
+                            .c_red {color:#b95f5e}
+                        }
+                    }
+                }
+                .period_info {
+                    @include vw-mo(margin-bottom, 150);text-align:left;
+                    .period_name {
+                        @include vw-mo(font-size, 26); font-weight: 700; @include vw-mo(border-bottom, 1 solid #000); @include vw-mo(padding-bottom, 30); @include vw-mo(margin-bottom, 40); 
+                    }
+                    .sub_txt {
+                        @include vw-mo(font-size, 22); @include vw-mo(letter-spacing, 1); color: #555;
+                    }
+                }
+            }
+            // 요금안내
+            
+            .info_dec {
+                text-align: left;
+                @include vw-mo(padding, 0 20);
+                li {@include vw-mo(font-size, 28); @include vw-mo(padding-left, 14); @include vw-mo(text-indent, -14); @include vw-mo(line-height, 38);}
+            
+            }
+            // 예약안내
+
+            .sub_main_txt {
+                @include vw-mo(font-size, 30); color: red; text-align: left; @include vw-mo(padding-left, 20); @include vw-mo(line-height, 40); font-weight: 700; @include vw-mo(margin-bottom, 40);
+            }
+
+            .cansel_info {
+                display: flex; overflow-x: scroll;
+                dl {
+                    &:last-child { color: red}
+                    @include vw-mo(border, 1 solid #ccc);
+                    dt {@include vw-mo(font-size, 27); @include vw-mo(width, 230); @include vw-mo(padding, 20 0); background-color: #bcbcbc;  @include vw-mo(line-height, 40); @include vw-mo(height, 120); display: flex; align-items: center; justify-content: center}
+                    dd {@include vw-mo(font-size, 27); @include vw-mo(width, 230); @include vw-mo(margin, 0); @include vw-mo(padding, 35 0); @include vw-mo(line-height, 40);}
+                    
+                }
+            }
+            // 환불규정
+        }
+        // sec_reservation
+
+        .sec_traffic {
+            .way_box {
+                @include vw-mo(margin-bottom, 40);
+                &:first-child{ @include vw-mo(padding-top, 50);}
+                .name_box {
+                    @include vw-mo(font-size, 28); color: #74602e; font-weight: 700;  @include vw-mo(margin-bottom, 30);
+                    .num_t {color: #fca70e; @include vw-mo(font-size, 32);}
+                }
+                .add_txt {font-weight: 700; @include vw-mo(font-size, 28); @include vw-mo(margin-bottom, 15);}
+                .sub_txt {@include vw-mo(font-size, 28); @include vw-mo(line-height, 40);}
+            }
+        }
+        // sec_traffic
+    }
+}
