@@ -14,6 +14,57 @@
         .condition .bg_skyblue {@include vw-pc(margin-top, 20); @include vw-pc(padding, 35 50); @include vw-pc(border-radius, 4); background-color: #FBFCFF;}
         }
    }
+}
 
+// sec_support_project_2
+.sec_support_institution_2 {@include vw-pc(padding-bottom, 165);
+    .inner_1320 {
+        .content_box{
+            > * {@include vw-pc(margin-bottom, 135);}
+            > * .sub_title-round{@include vw-pc(margin-bottom, 36);}
+            > * .desc{@include vw-pc(margin-bottom, 70);}
+            .content_procedure {
+                .img_box {position: absolute; width: 100vw; @include vw-pc(height, 702); left: 50%; transform: translateX(-50%); z-index: -1;}
+                .step_box {position: relative; @include vw-pc(padding, 95 0); @include vw-pc(width, 1148); color: #fff;
+                    &::after {display: block; content: ""; position: absolute; left: 50%; @include vw-pc(width, .5); height: 100%; transform: translateX(-50%);background-color: #F2F2F2;}
+                }
+                .step_box dl {@include vw-pc(width, 489);}
+        
+                .step_box dl dt {@include vw-pc(margin-bottom, 30); @include vw-pc(font-size, 30); @include vw-pc(margin-left, 63); line-height: 1.4; font-weight: 700;
+                    > .color_blue {display: flex; align-items: center;  color: #3D8AFF;
+                        &::before {display: block; content: ""; @include vw-pc(margin, 0 20 0 -62); @include vw-pc(width, 40); @include vw-pc(height, 5); background-color: #3D8AFF; }
+                    }
+                    &:not(:first-child) {@include vw-pc(margin-top, 75);}
+                }
+                .step_box dl dt 
+                .step_box dl dd.desc_list-ul .desc_list{@include vw-pc(height, 110);}
+                .step_box dl dd.desc_list-ul .desc_list li{@include vw-pc(font-size, 14);}
+    
+            }
+    
+            .content_type {
+                .desc_list-ul > li + li {@include vw-pc(margin-top, 60);}
+            }
+        }
+    }
+}
 
+.sec_support_institution_3 {
+    .content_box {
+        > * {@include vw-pc(margin-bottom, 165);}
+        > * .sub_title-square {@include vw-pc(margin-bottom, 35);}
+        > * .img_box {@include vw-pc(margin, 60 auto 0);}
+        .content_type .img_box {@include vw-pc(width, 1139);}
+        .content_share .img_box {@include vw-pc(width, 1212);}
+        .content_target{
+            .sub_title-square {@include vw-pc(margin-bottom, 36);}
+            .desc {@include vw-pc(margin-left, 45);}
+            .disc {@include vw-pc(margin-left, 50);}
+            .bg_skyblue {@include vw-pc(margin, 25 0); @include vw-pc(padding, 37 57); @include vw-pc(width, 1257); background-color: #FBFCFF;}
+            .industry_type_list {display: flex; justify-content: center; flex-wrap: wrap; @include vw-pc(margin, 25 0 100 45)}
+            .industry_type_list li{line-height: 2;}
+            .industry_type_list li + li {@include vw-pc(margin-left, 60);}
+            
+        }
+    }
 }
