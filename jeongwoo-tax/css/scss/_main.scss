@@ -90,7 +90,7 @@
     .num_title.right {text-align: right;}
     .num_title.left {text-align: left;}
     .en {font-family: 'NotoSerifKR';}
-    .align_box {display: flex; @include vw-pc(width, 1320); height: 100%;@include vw-pc(margin, 0 auto); justify-content: space-between;}
+    .align_box {display: flex; @include vw-pc(width, 1320);@include vw-pc(margin, 0 auto); justify-content: space-between;}
 
     // SEC_KV START
     .sec_kv {

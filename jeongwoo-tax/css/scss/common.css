@@ -420,6 +420,7 @@ body {
 
 .bs_pt_wrap .img_box img {
   width: 100%;
+  height: auto;
 }
 
 .bs_pt_wrap .inner_1920,

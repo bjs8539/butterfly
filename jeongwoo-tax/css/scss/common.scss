@@ -457,7 +457,7 @@ body {padding: 0; margin: 0;}
 .bs_pt_wrap *{ box-sizing: border-box;}
 
 .bs_pt_wrap .img_box{position:relative; width:100%; font-size:0;}
-.bs_pt_wrap .img_box img{width:100%;}
+.bs_pt_wrap .img_box img{width:100%; height: auto;}
 
 .bs_pt_wrap .inner_1920,
 .bs_pt_wrap .inner_1440,
