@@ -53,13 +53,13 @@
             .main_txt {@include vw-max(font-size, 46); @include vw-max(line-height, 64); font-weight: 700; @include vw-max(margin-right, 150); color: #fff}
             .check_area {
                 ul {
-                    @include vw-pc(margin-bottom, 43);
+                    @include vw-max(margin-bottom, 43);
                     li {
-                        display: flex; align-items: center;@include vw-pc(margin-bottom, 14);@include vw-pc(font-size, 20);@include vw-pc(line-height, 26); font-weight: 700; color: #fff;
-                        img {@include vw-pc(width, 36); @include vw-pc(margin-right, 15);}
+                        display: flex; align-items: center;@include vw-max(margin-bottom, 14);@include vw-max(font-size, 20);@include vw-max(line-height, 26); font-weight: 700; color: #fff;
+                        img {@include vw-max(width, 36); @include vw-max(margin-right, 15);}
                     }
                 }
-                .innobiz_btn {display: flex; align-items: center; justify-content: center; @include vw-pc(width, 540);@include vw-pc(height, 80);@include vw-pc(font-size, 26);font-weight: 700;@include vw-pc(border-radius, 63); background-color: #3D8AFF; color: #fff;}
+                .innobiz_btn {display: flex; align-items: center; justify-content: center; @include vw-max(width, 540);@include vw-max(height, 80);@include vw-max(font-size, 26);font-weight: 700;@include vw-max(border-radius, 63); background-color: #3D8AFF; color: #fff;}
             }
         }
     }
@@ -67,5 +67,43 @@
 
 // sec_support_project_4
 .sec_support_project_4 {
-    
+    .venture_txt {@include vw-pc(margin-bottom, 130);}
+}
+
+// sec_support_project_5
+.sec_support_project_5 {
+    .sub_title-round {@include vw-pc(margin-bottom, 64);}
+    .sub_title-round.m-b {@include vw-pc(margin-bottom, 60);}
+    .align_box {
+        @include vw-pc(padding-left, 32); @include vw-pc(padding-bottom, 120); @include vw-pc(margin-bottom, 106); @include vw-pc(border-bottom, 1 solid #E9E9E9);
+        .txt_box {
+            @include vw-pc(width, 677); @include vw-pc(padding-top, 60);
+            .sub_title-square {@include vw-pc(margin-bottom, 37);}
+            .desc_list-dl {
+                margin-left: 0;
+                dd {@include vw-pc(margin-bottom, 20);}
+            }
+        }
+        .img_box {@include vw-pc(width, 452);}
+    }
+    .inner_1920 {
+        width: 100%; @include vw-max(height, 1249);background: url('../../img/jw_marketing_clickbg_pc.png') no-repeat; @include vw-max(background-size, 1920 1249);
+        .aling_box {
+            display: flex; justify-content: center; @include vw-max(height, 1025);
+            .title_box {
+                width: 50%;@include vw-max(padding, 94 0 0 390); background-color: rgba(0, 43, 255, 0.66); color: #fff;
+                .main_txt {@include vw-max(margin-bottom, 28); @include vw-max(font-size, 99); @include vw-max(line-height, 123); font-weight: 700;}
+                .sub_txt {@include vw-max(font-size, 38); @include vw-max(line-height, 53);}
+            }
+            .txt_box {
+               width: 50%;background-color: rgba(0, 0, 0, 0.7); @include vw-max(padding, 94 300 0 72);
+                dl {
+                    @include vw-max(margin-bottom, 68); @include vw-max(padding-bottom, 68); color: #fff; @include vw-max(border-bottom, 1 solid #f2f2f2);
+                    dt {display: flex;flex-direction: row-reverse;justify-content: flex-end;align-items: flex-start; @include vw-max(margin-bottom, 30);@include vw-max(font-size, 30);@include vw-max(line-height, 42); font-weight: 700;}
+                    dt::after {content: '' ; display: block; @include vw-max(width, 40); @include vw-max(height, 5); background-color: #3D8AFF; @include vw-max(margin-top, 19); @include vw-max(margin-right, 21);}
+                    dd {@include vw-max(margin-bottom, 25);@include vw-max(font-size, 14); @include vw-max(line-height, 26); opacity: 0.8; list-style-type: disc;}
+               }
+            }
+        }
+    }
 }

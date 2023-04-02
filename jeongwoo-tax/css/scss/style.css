@@ -2455,9 +2455,9 @@
 .sec_support_project_3 .inner_1920 .txt_box .check_area ul {
   margin-bottom: 43px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul {
-    margin-bottom: 2.9861111111vw;
+    margin-bottom: 2.2395833333vw;
   }
 }
 .sec_support_project_3 .inner_1920 .txt_box .check_area ul li {
@@ -2469,33 +2469,33 @@
   font-weight: 700;
   color: #fff;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul li {
-    margin-bottom: 0.9722222222vw;
+    margin-bottom: 0.7291666667vw;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul li {
-    font-size: 1.3888888889vw;
+    font-size: 1.0416666667vw;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul li {
-    line-height: 1.8055555556vw;
+    line-height: 1.3541666667vw;
   }
 }
 .sec_support_project_3 .inner_1920 .txt_box .check_area ul li img {
   width: 36px;
   margin-right: 15px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul li img {
-    width: 2.5vw;
+    width: 1.875vw;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area ul li img {
-    margin-right: 1.0416666667vw;
+    margin-right: 0.78125vw;
   }
 }
 .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
@@ -2510,23 +2510,295 @@
   background-color: #3D8AFF;
   color: #fff;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
-    width: 37.5vw;
+    width: 28.125vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
+    height: 4.1666666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
+    font-size: 1.3541666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
+    border-radius: 3.28125vw;
+  }
+}
+
+.sec_support_project_4 .venture_txt {
+  margin-bottom: 130px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_4 .venture_txt {
+    margin-bottom: 9.0277777778vw;
+  }
+}
+
+.sec_support_project_5 .sub_title-round {
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .sub_title-round {
+    margin-bottom: 4.4444444444vw;
+  }
+}
+.sec_support_project_5 .sub_title-round.m-b {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .sub_title-round.m-b {
+    margin-bottom: 4.1666666667vw;
+  }
+}
+.sec_support_project_5 .align_box {
+  padding-left: 32px;
+  padding-bottom: 120px;
+  margin-bottom: 106px;
+  border-bottom: 1px solid #E9E9E9;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box {
+    padding-left: 2.2222222222vw;
   }
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
-    height: 5.5555555556vw;
+  .sec_support_project_5 .align_box {
+    padding-bottom: 8.3333333333vw;
   }
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
-    font-size: 1.8055555556vw;
+  .sec_support_project_5 .align_box {
+    margin-bottom: 7.3611111111vw;
   }
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_project_3 .inner_1920 .txt_box .check_area .innobiz_btn {
-    border-radius: 4.375vw;
+  .sec_support_project_5 .align_box {
+    border-bottom: 0.0694444444vw solid #E9E9E9;
+  }
+}
+.sec_support_project_5 .align_box .txt_box {
+  width: 677px;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box .txt_box {
+    width: 47.0138888889vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box .txt_box {
+    padding-top: 4.1666666667vw;
+  }
+}
+.sec_support_project_5 .align_box .txt_box .sub_title-square {
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box .txt_box .sub_title-square {
+    margin-bottom: 2.5694444444vw;
+  }
+}
+.sec_support_project_5 .align_box .txt_box .desc_list-dl {
+  margin-left: 0;
+}
+.sec_support_project_5 .align_box .txt_box .desc_list-dl dd {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box .txt_box .desc_list-dl dd {
+    margin-bottom: 1.3888888889vw;
+  }
+}
+.sec_support_project_5 .align_box .img_box {
+  width: 452px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_project_5 .align_box .img_box {
+    width: 31.3888888889vw;
+  }
+}
+.sec_support_project_5 .inner_1920 {
+  width: 100%;
+  height: 1249px;
+  background: url("../../img/jw_marketing_clickbg_pc.png") no-repeat;
+  background-size: 1920px 1249px;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 {
+    height: 65.0520833333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 {
+    background-size: 100vw 65.0520833333vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box {
+  display: flex;
+  justify-content: center;
+  height: 1025px;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box {
+    height: 53.3854166667vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .title_box {
+  width: 50%;
+  padding: 94px 0px 0px 390px;
+  background-color: rgba(0, 43, 255, 0.66);
+  color: #fff;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box {
+    padding: 4.8958333333vw 0vw 0vw 20.3125vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .title_box .main_txt {
+  margin-bottom: 28px;
+  font-size: 99px;
+  line-height: 123px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box .main_txt {
+    margin-bottom: 1.4583333333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box .main_txt {
+    font-size: 5.15625vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box .main_txt {
+    line-height: 6.40625vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .title_box .sub_txt {
+  font-size: 38px;
+  line-height: 53px;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box .sub_txt {
+    font-size: 1.9791666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .title_box .sub_txt {
+    line-height: 2.7604166667vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .txt_box {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 94px 300px 0px 72px;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box {
+    padding: 4.8958333333vw 15.625vw 0vw 3.75vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .txt_box dl {
+  margin-bottom: 68px;
+  padding-bottom: 68px;
+  color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl {
+    margin-bottom: 3.5416666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl {
+    padding-bottom: 3.5416666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl {
+    border-bottom: 0.0520833333vw solid #f2f2f2;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt {
+    margin-bottom: 1.5625vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt {
+    font-size: 1.5625vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt {
+    line-height: 2.1875vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #3D8AFF;
+  margin-top: 19px;
+  margin-right: 21px;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt::after {
+    width: 2.0833333333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt::after {
+    height: 0.2604166667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt::after {
+    margin-top: 0.9895833333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dt::after {
+    margin-right: 1.09375vw;
+  }
+}
+.sec_support_project_5 .inner_1920 .aling_box .txt_box dl dd {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 0.8;
+  list-style-type: disc;
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dd {
+    margin-bottom: 1.3020833333vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dd {
+    font-size: 0.7291666667vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dd {
+    line-height: 1.3541666667vw;
   }
 }/*# sourceMappingURL=style.css.map */
