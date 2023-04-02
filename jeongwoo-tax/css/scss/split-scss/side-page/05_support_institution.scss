@@ -1,0 +1,19 @@
+
+// sec_support_project_1
+.sec_support_institution_1 {@include vw-pc(padding-bottom, 165);
+   .content_box{
+        .content_title {
+            .desc {@include vw-pc(padding-left, 32); @include vw-pc(margin-bottom, 100);}
+        }
+
+        .content_text {
+            .sub_title-square {@include vw-pc(margin-bottom, 35);}
+            .text_title {@include vw-pc(margin-bottom, 60);}
+
+            .condition:not(:last-child) {@include vw-pc(margin-bottom, 90);}
+        .condition .bg_skyblue {@include vw-pc(margin-top, 20); @include vw-pc(padding, 35 50); @include vw-pc(border-radius, 4); background-color: #FBFCFF;}
+        }
+   }
+
+
+}

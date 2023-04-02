@@ -73,7 +73,7 @@
 .jeongwoo-tax-sub .inner_1320 .desc {
   margin-top: 36px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.4;
 }
 @media screen and (max-width: 1440px) {
   .jeongwoo-tax-sub .inner_1320 .desc {
@@ -83,11 +83,6 @@
 @media screen and (max-width: 1440px) {
   .jeongwoo-tax-sub .inner_1320 .desc {
     font-size: 1.25vw;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .jeongwoo-tax-sub .inner_1320 .desc {
-    line-height: 1.6666666667vw;
   }
 }
 .jeongwoo-tax-sub .inner_1320 .icon_line {
@@ -2800,5 +2795,73 @@
 @media screen and (max-width: 1920px) {
   .sec_support_project_5 .inner_1920 .aling_box .txt_box dl dd {
     line-height: 1.3541666667vw;
+  }
+}
+
+.sec_support_institution_1 {
+  padding-bottom: 165px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 {
+    padding-bottom: 11.4583333333vw;
+  }
+}
+.sec_support_institution_1 .content_box .content_title .desc {
+  padding-left: 32px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_title .desc {
+    padding-left: 2.2222222222vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_title .desc {
+    margin-bottom: 6.9444444444vw;
+  }
+}
+.sec_support_institution_1 .content_box .content_text .sub_title-square {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .sub_title-square {
+    margin-bottom: 2.4305555556vw;
+  }
+}
+.sec_support_institution_1 .content_box .content_text .text_title {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .text_title {
+    margin-bottom: 4.1666666667vw;
+  }
+}
+.sec_support_institution_1 .content_box .content_text .condition:not(:last-child) {
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .condition:not(:last-child) {
+    margin-bottom: 6.25vw;
+  }
+}
+.sec_support_institution_1 .content_box .content_text .condition .bg_skyblue {
+  margin-top: 20px;
+  padding: 35px 50px;
+  border-radius: 4px;
+  background-color: #FBFCFF;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .condition .bg_skyblue {
+    margin-top: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .condition .bg_skyblue {
+    padding: 2.4305555556vw 3.4722222222vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_1 .content_box .content_text .condition .bg_skyblue {
+    border-radius: 0.2777777778vw;
   }
 }/*# sourceMappingURL=style.css.map */
