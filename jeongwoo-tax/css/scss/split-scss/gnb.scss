@@ -1,0 +1,15 @@
+.sec_gnb {
+    position: absolute; left: 50%; @include vw-pc(top, 47); transform: translateX(-50%); z-index: 10; background-color:transparent;
+    .menu_area {
+        display: flex; justify-content: space-between; align-items: center; @include vw-pc(width, 1321); @include vw-pc(margin, 0 auto);
+        .img_box {@include vw-pc(width, 182);}
+        ul {
+            display: flex; align-items: center; 
+            li {
+                a {display: flex;align-items: center;@include vw-pc(height, 55);@include vw-pc(padding, 0 20); font-weight: 400; @include vw-pc(font-size, 16);}
+            }
+        }
+    }
+}
+
+.sec_header ul li a {color: #fff;}

@@ -1,0 +1,11 @@
+.sec_footer {
+    background-color: #000;
+    .align_box {
+        @include vw-pc(padding, 75 0); flex-direction: column;
+        .name_txt {@include vw-pc(margin-bottom, 20);@include vw-pc(font-size, 32); @include vw-pc(line-height, 55); font-weight: 700; color: #fff;}
+        .company_info {
+            display: flex; justify-content: space-between; align-items: center;
+            div p {@include vw-pc(font-size, 18);@include vw-pc(line-height, 30); color: #fff; opacity: 0.7;}
+        }
+    }
+}

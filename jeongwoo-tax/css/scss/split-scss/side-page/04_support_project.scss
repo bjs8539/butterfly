@@ -1,0 +1,71 @@
+
+// sec_support_project_1
+.sec_support_project_1 {
+    .main_title_box {
+        @include vw-pc(margin-bottom, 93);
+        .desc {@include vw-pc(line-height, 28);}
+    }
+    .square_box {
+        @include vw-pc(margin-bottom, 150);
+        .desc_txt {@include vw-pc(margin, 35 0 60 20); @include vw-pc(font-size, 18); @include vw-pc(line-height, 28);}
+    }
+}
+
+// sec_support_project_2
+.sec_support_project_2 {
+    .main_title_box {@include vw-pc(margin-bottom, 50);}
+    .contents_area {
+        .main_biz {
+            @include vw-pc(margin-bottom, 130);
+            .desc {@include vw-pc(margin-left, 32); @include vw-pc(line-height, 28);}
+
+            &.biz1 {
+                .desc {@include vw-pc(margin-bottom, 69); }
+                .circle_img {@include vw-pc(width, 1243);@include vw-pc(margin, 69 auto 65);}
+                .biz_desc {@include vw-pc(font-size, 14); @include vw-pc(line-height, 28); text-align: center; color: #888;}
+            }
+            &.biz2 {
+                .desc {@include vw-pc(margin-bottom, 45); @include vw-pc(margin-top, 15);}
+                .desc_list-dl {@include vw-pc(padding, 34 0 34 60); background-color: #FBFCFF;}
+            }
+            &.biz3 {
+               
+            }
+        }
+    }
+}
+
+// sec_support_project_3
+.sec_support_project_3 {
+    .main_title_box {@include vw-pc(margin-bottom, 51);}
+    .contents_area {
+        @include vw-pc(margin-bottom, 135);
+        .sub_title-round {@include vw-pc(margin-bottom, 24);}
+        .desc_list-ul {
+            @include vw-pc(margin-bottom, 60);
+            &:last-child {margin-bottom: 0}
+        }
+    }
+    .inner_1920 {
+        .img_box {@include vw-max(margin, 75 0 135);}
+        .txt_box {
+            display: flex;justify-content: center;position: absolute; @include vw-max(left, 384); @include vw-max(top, 120);
+            .main_txt {@include vw-max(font-size, 46); @include vw-max(line-height, 64); font-weight: 700; @include vw-max(margin-right, 150); color: #fff}
+            .check_area {
+                ul {
+                    @include vw-pc(margin-bottom, 43);
+                    li {
+                        display: flex; align-items: center;@include vw-pc(margin-bottom, 14);@include vw-pc(font-size, 20);@include vw-pc(line-height, 26); font-weight: 700; color: #fff;
+                        img {@include vw-pc(width, 36); @include vw-pc(margin-right, 15);}
+                    }
+                }
+                .innobiz_btn {display: flex; align-items: center; justify-content: center; @include vw-pc(width, 540);@include vw-pc(height, 80);@include vw-pc(font-size, 26);font-weight: 700;@include vw-pc(border-radius, 63); background-color: #3D8AFF; color: #fff;}
+            }
+        }
+    }
+}
+
+// sec_support_project_4
+.sec_support_project_4 {
+    
+}

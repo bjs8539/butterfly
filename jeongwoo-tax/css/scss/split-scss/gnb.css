@@ -1,0 +1,11 @@
+.sec_gnb {
+  display: none;
+}
+.sec_gnb .menu_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec_gnb .menu_area .img_box {
+  width: 182px;
+}/*# sourceMappingURL=gnb.css.map */

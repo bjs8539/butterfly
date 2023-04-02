@@ -1,0 +1,47 @@
+.sec_law-firm {
+    .main_title_box {@include vw-pc(margin-bottom, 65);}
+    .contents_area {
+        display: flex;
+        .tab_list {
+            @include vw-pc(margin-right, 89);
+            ul {
+                display: flex; flex-direction: column;
+                li {@include vw-pc(font-size, 22); @include vw-pc(line-height, 26); @include vw-pc(padding-bottom, 10);@include vw-pc(padding-right, 35);@include vw-pc(margin-bottom, 20); @include vw-pc(border-bottom, 1 solid #D9D9D9); color: #D9D9D9;}
+                li.on {color: #000; font-weight: 700;@include vw-pc(border-bottom, 3 solid #3D8AFF);}    
+            }
+        }
+        .tab_contents {
+            .contents_list {
+                display: none;
+                &.on {display: block}
+                .lawyer_info {
+                    @include vw-pc(padding-bottom, 33);@include vw-pc(border-bottom, 1 solid #E9E9E9);
+                    .lawyer_name {@include vw-pc(margin-bottom, 28);@include vw-pc(font-size, 28); font-weight: 700;}
+                    .phone-adress {
+                        display: flex; align-items: center;
+                        .pa_align {
+                            display: flex; align-items: center; @include vw-pc(margin-right, 29);
+                            .img_box {@include vw-pc(width, 25); @include vw-pc(margin-right, 15);}
+                            p {@include vw-pc(font-size, 18);}
+                        }
+                    }
+                }
+                .contents_align {
+                    display: flex; @include vw-pc(padding, 70 0 203);
+                    .img_box {@include vw-pc(width, 320); @include vw-pc(margin-right, 109);}
+                    .txt_box {
+                        &:not(:last-child) {@include vw-pc(margin-bottom, 103);}
+                        .law_sub_tit {
+                            display: flex;position: relative;@include vw-pc(font-size, 22); @include vw-pc(line-height, 36); font-weight: 700; @include vw-pc(margin-bottom, 9);
+                            &::after {content: "";display: block;position: absolute; top: 50%; transform: translateY(-50%); @include vw-pc(left, -20);@include vw-pc(width, 10);@include vw-pc(height, 10);@include vw-pc(margin-right, 10);border-radius: 50%;background-color: #3D8AFF; }
+                        }
+                        .desc_txt {@include vw-pc(font-size, 18);@include vw-pc(line-height, 28);}
+                    }
+                }
+            }
+        }
+    }
+
+    // 법무법인 desc 제목 (ex, ● 인사말)
+    
+}

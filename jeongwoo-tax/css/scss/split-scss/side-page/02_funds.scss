@@ -1,0 +1,20 @@
+.sec_funds {
+    .inner_1320 {@include vw-pc(padding-bottom, 80);}
+    .main_title_box {@include vw-pc(margin-bottom, 115);}
+    .contents_area {
+        display: flex;
+        .contents_list {
+            display: flex;
+            .img_box {@include vw-pc(width, 21);@include vw-pc(margin-right, 26);}
+            &:not(:last-child) {@include vw-pc(margin-right, 165);}
+            .contents_item {
+                display: flex; flex-direction: column;
+                dl {
+                    @include vw-pc(margin-bottom, 69.5 );
+                    dt {@include vw-pc(margin-bottom, 18);@include vw-pc(font-size, 22); font-weight: 700;}
+                    dd {@include vw-pc(font-size, 18);}
+                }
+            }
+        }
+    }
+}

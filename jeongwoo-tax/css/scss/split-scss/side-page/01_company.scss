@@ -1,0 +1,19 @@
+// SEC_GREETING START
+.sec_greeting {
+    width: 100%;@include vw-pc(height, 1456);background: url('../../img/jw_company_bg_pc.png') no-repeat; @include vw-pc(background-size, 1920 1456);
+    .align_area {
+        display: flex;
+        .img_box {@include vw-pc(width, 582);@include vw-pc(margin-right, 145);}
+        .txt_box {
+            @include vw-pc(margin-top, 30);
+            .icon_line {@include vw-pc(margin-bottom, 30);}
+            .main_txt {@include vw-pc(margin-bottom, 28);@include vw-pc(font-size, 42);@include vw-pc(line-height, 62); font-weight: 700;}
+            .sub_txt {@include vw-pc(margin-bottom, 47);@include vw-pc(font-size, 18); @include vw-pc(line-height, 26);}
+            .check_txt {@include vw-pc(margin-bottom, 40); display: flex;}
+            .check_txt:last-child {@include vw-pc(margin-bottom, 44);}
+            .check_txt img{@include vw-pc(width, 27); @include vw-pc(margin-right, 10);}
+            .check_txt p{@include vw-pc(font-size, 28); font-weight: 700;}
+
+        }
+    }
+}
