@@ -76,11 +76,12 @@
         > * {@include vw-pc(margin-bottom, 165);}
         .content_list > * {@include vw-pc(margin-bottom, 135);}
         > * .sub_title-round {@include vw-pc(margin-bottom, 35);}
-        > * .img_box {@include vw-pc(margin-bottom, 20); @include vw-pc(width, 1320);}
+        > * .img_box {@include vw-pc(margin-bottom, 20);}
         .desc_list-ul {@include vw-pc(margin-bottom, 60);}
-        .content_condition .desc_list .img_box {@include vw-pc(margin-top, 22); @include vw-pc(margin-left, -45);}
-        .content_procedure .desc_list-ul:nth-of-type(1) {@include vw-pc(width, 1262);}
-        .content_procedure .desc_list-ul:nth-of-type(2) {@include vw-pc(width, 812);}
+        .content_target .desc_list .img_box{ @include vw-pc(width, 1320);}
+        .content_condition .desc_list .img_box {@include vw-pc(width, 1320); @include vw-pc(margin-top, 22); @include vw-pc(margin-left, -45);}
+        .content_procedure .desc_list-ul:nth-of-type(1) .img_box {@include vw-pc(width, 1282);}
+        .content_procedure .desc_list-ul:nth-of-type(2) .img_box {@include vw-pc(width, 833);}
     }
     
 }

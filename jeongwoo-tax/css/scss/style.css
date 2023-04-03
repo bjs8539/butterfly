@@ -3831,16 +3831,10 @@
 }
 .sec_support_institution_4 .content_box > * .img_box {
   margin-bottom: 20px;
-  width: 1320px;
 }
 @media screen and (max-width: 1440px) {
   .sec_support_institution_4 .content_box > * .img_box {
     margin-bottom: 1.3888888889vw;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .sec_support_institution_4 .content_box > * .img_box {
-    width: 91.6666666667vw;
   }
 }
 .sec_support_institution_4 .content_box .desc_list-ul {
@@ -3851,9 +3845,23 @@
     margin-bottom: 4.1666666667vw;
   }
 }
+.sec_support_institution_4 .content_box .content_target .desc_list .img_box {
+  width: 1320px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_target .desc_list .img_box {
+    width: 91.6666666667vw;
+  }
+}
 .sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
+  width: 1320px;
   margin-top: 22px;
   margin-left: -45px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
+    width: 91.6666666667vw;
+  }
 }
 @media screen and (max-width: 1440px) {
   .sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
@@ -3865,20 +3873,20 @@
     margin-left: -3.125vw;
   }
 }
-.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) {
-  width: 1262px;
+.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) .img_box {
+  width: 1282px;
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) {
-    width: 87.6388888889vw;
+  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) .img_box {
+    width: 89.0277777778vw;
   }
 }
-.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) {
-  width: 812px;
+.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) .img_box {
+  width: 833px;
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) {
-    width: 56.3888888889vw;
+  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) .img_box {
+    width: 57.8472222222vw;
   }
 }
 
