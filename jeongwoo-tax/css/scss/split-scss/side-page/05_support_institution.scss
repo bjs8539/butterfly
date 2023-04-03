@@ -49,7 +49,29 @@
     }
 }
 
+// sec_support_project_3
 .sec_support_institution_3 {
+    .content_box {
+        > * {@include vw-pc(margin-bottom, 165);}
+        > * .sub_title-square {@include vw-pc(margin-bottom, 35);}
+        > * .img_box {@include vw-pc(margin, 60 auto 0);}
+        .content_type .img_box {@include vw-pc(width, 1139);}
+        .content_share .img_box {@include vw-pc(width, 1212);}
+        .content_target{
+            .sub_title-square {@include vw-pc(margin-bottom, 36);}
+            .desc {@include vw-pc(margin-left, 45);}
+            .disc {@include vw-pc(margin-left, 50);}
+            .bg_skyblue {@include vw-pc(margin, 25 0); @include vw-pc(padding, 37 57); @include vw-pc(width, 1257); background-color: #FBFCFF;}
+            .industry_type_list {display: flex; justify-content: center; flex-wrap: wrap; @include vw-pc(margin, 25 0 100 45)}
+            .industry_type_list li{line-height: 2;}
+            .industry_type_list li + li {@include vw-pc(margin-left, 60);}
+            
+        }
+    }
+}
+
+// sec_support_project_4
+.sec_support_institution_4 {
     .content_box {
         > * {@include vw-pc(margin-bottom, 165);}
         > * .sub_title-square {@include vw-pc(margin-bottom, 35);}

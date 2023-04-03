@@ -24,7 +24,7 @@
         // 각 페이지 서브 타이틀
         .main_title_box {@include vw-pc(margin-bottom, 51);}
         .title {@include vw-pc(font-size, 36);}
-        .desc {@include vw-pc(margin-top, 36);@include vw-pc(font-size, 18); line-height: 1.4;}
+        .desc {@include vw-pc(margin-top, 36);@include vw-pc(font-size, 18); @include vw-pc(line-height, 24);}
         .icon_line {@include icon-bar(); @include vw-pc(margin-top, 40);}
 
         $title-type : (round, square, 운섭);

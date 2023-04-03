@@ -73,7 +73,11 @@
 .jeongwoo-tax-sub .inner_1320 .desc {
   margin-top: 36px;
   font-size: 18px;
+<<<<<<< HEAD
   line-height: 1.4;
+=======
+  line-height: 24px;
+>>>>>>> 7c9cd06 (유빈_중간 작업)
 }
 @media screen and (max-width: 1440px) {
   .jeongwoo-tax-sub .inner_1320 .desc {
@@ -85,6 +89,14 @@
     font-size: 1.25vw;
   }
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1440px) {
+  .jeongwoo-tax-sub .inner_1320 .desc {
+    line-height: 1.6666666667vw;
+  }
+}
+>>>>>>> 7c9cd06 (유빈_중간 작업)
 .jeongwoo-tax-sub .inner_1320 .icon_line {
   display: block;
   width: 60px;
