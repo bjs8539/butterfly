@@ -74,19 +74,22 @@
 .sec_support_institution_4 {
     .content_box {
         > * {@include vw-pc(margin-bottom, 165);}
-        > * .sub_title-square {@include vw-pc(margin-bottom, 35);}
-        > * .img_box {@include vw-pc(margin, 60 auto 0);}
-        .content_type .img_box {@include vw-pc(width, 1139);}
-        .content_share .img_box {@include vw-pc(width, 1212);}
-        .content_target{
-            .sub_title-square {@include vw-pc(margin-bottom, 36);}
-            .desc {@include vw-pc(margin-left, 45);}
-            .disc {@include vw-pc(margin-left, 50);}
-            .bg_skyblue {@include vw-pc(margin, 25 0); @include vw-pc(padding, 37 57); @include vw-pc(width, 1257); background-color: #FBFCFF;}
-            .industry_type_list {display: flex; justify-content: center; flex-wrap: wrap; @include vw-pc(margin, 25 0 100 45)}
-            .industry_type_list li{line-height: 2;}
-            .industry_type_list li + li {@include vw-pc(margin-left, 60);}
-            
-        }
+        .content_list > * {@include vw-pc(margin-bottom, 135);}
+        > * .sub_title-round {@include vw-pc(margin-bottom, 35);}
+        > * .img_box {@include vw-pc(margin-bottom, 20);}
+        .desc_list-ul {@include vw-pc(margin-bottom, 60);}
+        .content_condition .desc_list .img_box {@include vw-pc(margin-top, 22); @include vw-pc(margin-left, -45);}
+        .content_procedure .desc_list-ul:nth-of-type(1) {@include vw-pc(width, 1262);}
+        .content_procedure .desc_list-ul:nth-of-type(2) {@include vw-pc(width, 812);}
+    }
+    
+}
+
+.sec_support_institution_5 {
+    .content_box {
+        > * {@include vw-pc(margin-bottom, 165);}
+        .content_list li + li {@include vw-pc(margin-top, 60);}
+        .content_list li .sub_title-round {@include vw-pc(margin-bottom, 36);}
+        .content_list li .img_box {@include vw-pc(margin, 52 auto 0); @include vw-pc(width, 1139);}
     }
 }

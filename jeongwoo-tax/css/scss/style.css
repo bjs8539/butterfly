@@ -73,11 +73,7 @@
 .jeongwoo-tax-sub .inner_1320 .desc {
   margin-top: 36px;
   font-size: 18px;
-<<<<<<< HEAD
-  line-height: 1.4;
-=======
   line-height: 24px;
->>>>>>> 7c9cd06 (유빈_중간 작업)
 }
 @media screen and (max-width: 1440px) {
   .jeongwoo-tax-sub .inner_1320 .desc {
@@ -89,14 +85,11 @@
     font-size: 1.25vw;
   }
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1440px) {
   .jeongwoo-tax-sub .inner_1320 .desc {
     line-height: 1.6666666667vw;
   }
 }
->>>>>>> 7c9cd06 (유빈_중간 작업)
 .jeongwoo-tax-sub .inner_1320 .icon_line {
   display: block;
   width: 60px;
@@ -3806,5 +3799,115 @@
 @media screen and (max-width: 1440px) {
   .sec_support_institution_3 .content_box .content_target .industry_type_list li + li {
     margin-left: 4.1666666667vw;
+  }
+}
+
+.sec_support_institution_4 .content_box > * {
+  margin-bottom: 165px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box > * {
+    margin-bottom: 11.4583333333vw;
+  }
+}
+.sec_support_institution_4 .content_box .content_list > * {
+  margin-bottom: 135px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_list > * {
+    margin-bottom: 9.375vw;
+  }
+}
+.sec_support_institution_4 .content_box > * .sub_title-round {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box > * .sub_title-round {
+    margin-bottom: 2.4305555556vw;
+  }
+}
+.sec_support_institution_4 .content_box > * .img_box {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box > * .img_box {
+    margin-bottom: 1.3888888889vw;
+  }
+}
+.sec_support_institution_4 .content_box .desc_list-ul {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .desc_list-ul {
+    margin-bottom: 4.1666666667vw;
+  }
+}
+.sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
+  margin-top: 22px;
+  margin-left: -45px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
+    margin-top: 1.5277777778vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_condition .desc_list .img_box {
+    margin-left: -3.125vw;
+  }
+}
+.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) {
+  width: 1262px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(1) {
+    width: 87.6388888889vw;
+  }
+}
+.sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) {
+  width: 812px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box .content_procedure .desc_list-ul:nth-of-type(2) {
+    width: 56.3888888889vw;
+  }
+}
+
+.sec_support_institution_5 .content_box > * {
+  margin-bottom: 165px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_5 .content_box > * {
+    margin-bottom: 11.4583333333vw;
+  }
+}
+.sec_support_institution_5 .content_box .content_list li + li {
+  margin-top: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_5 .content_box .content_list li + li {
+    margin-top: 4.1666666667vw;
+  }
+}
+.sec_support_institution_5 .content_box .content_list li .sub_title-round {
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_5 .content_box .content_list li .sub_title-round {
+    margin-bottom: 2.5vw;
+  }
+}
+.sec_support_institution_5 .content_box .content_list li .img_box {
+  margin: 52px auto 0px;
+  width: 1139px;
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_5 .content_box .content_list li .img_box {
+    margin: 3.6111111111vw auto 0vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_5 .content_box .content_list li .img_box {
+    width: 79.0972222222vw;
   }
 }/*# sourceMappingURL=style.css.map */
