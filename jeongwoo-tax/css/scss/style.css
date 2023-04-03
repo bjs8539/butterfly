@@ -3572,6 +3572,9 @@
     height: 48.75vw;
   }
 }
+.sec_support_institution_2 .inner_1320 .content_box .content_procedure .img_box img {
+  height: 100%;
+}
 .sec_support_institution_2 .inner_1320 .content_box .content_procedure .step_box {
   position: relative;
   padding: 95px 0px;
@@ -3669,11 +3672,11 @@
     margin-top: 5.2083333333vw;
   }
 }
-.sec_support_institution_2 .inner_1320 .content_box .content_procedure .step_box dl dt .step_box dl dd.desc_list-ul .desc_list {
+.sec_support_institution_2 .inner_1320 .content_box .content_procedure .step_box dl dd.desc_list-ul .desc_list {
   height: 110px;
 }
 @media screen and (max-width: 1440px) {
-  .sec_support_institution_2 .inner_1320 .content_box .content_procedure .step_box dl dt .step_box dl dd.desc_list-ul .desc_list {
+  .sec_support_institution_2 .inner_1320 .content_box .content_procedure .step_box dl dd.desc_list-ul .desc_list {
     height: 7.6388888889vw;
   }
 }
@@ -3828,10 +3831,16 @@
 }
 .sec_support_institution_4 .content_box > * .img_box {
   margin-bottom: 20px;
+  width: 1320px;
 }
 @media screen and (max-width: 1440px) {
   .sec_support_institution_4 .content_box > * .img_box {
     margin-bottom: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .sec_support_institution_4 .content_box > * .img_box {
+    width: 91.6666666667vw;
   }
 }
 .sec_support_institution_4 .content_box .desc_list-ul {

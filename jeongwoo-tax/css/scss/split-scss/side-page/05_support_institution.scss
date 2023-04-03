@@ -25,6 +25,7 @@
             > * .desc{@include vw-pc(margin-bottom, 70);}
             .content_procedure {
                 .img_box {position: absolute; width: 100vw; @include vw-pc(height, 702); left: 50%; transform: translateX(-50%); z-index: -1;}
+                .img_box img{height: 100%;}
                 .step_box {position: relative; @include vw-pc(padding, 95 0); @include vw-pc(width, 1148); color: #fff;
                     &::after {display: block; content: ""; position: absolute; left: 50%; @include vw-pc(width, .5); height: 100%; transform: translateX(-50%);background-color: #F2F2F2;}
                 }
@@ -36,7 +37,6 @@
                     }
                     &:not(:first-child) {@include vw-pc(margin-top, 75);}
                 }
-                .step_box dl dt 
                 .step_box dl dd.desc_list-ul .desc_list{@include vw-pc(height, 110);}
                 .step_box dl dd.desc_list-ul .desc_list li{@include vw-pc(font-size, 14);}
     
@@ -76,7 +76,7 @@
         > * {@include vw-pc(margin-bottom, 165);}
         .content_list > * {@include vw-pc(margin-bottom, 135);}
         > * .sub_title-round {@include vw-pc(margin-bottom, 35);}
-        > * .img_box {@include vw-pc(margin-bottom, 20);}
+        > * .img_box {@include vw-pc(margin-bottom, 20); @include vw-pc(width, 1320);}
         .desc_list-ul {@include vw-pc(margin-bottom, 60);}
         .content_condition .desc_list .img_box {@include vw-pc(margin-top, 22); @include vw-pc(margin-left, -45);}
         .content_procedure .desc_list-ul:nth-of-type(1) {@include vw-pc(width, 1262);}
