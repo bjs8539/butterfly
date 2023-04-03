@@ -1,15 +1,43 @@
+
 .sec_gnb {
     position: absolute; left: 50%; @include vw-pc(top, 47); transform: translateX(-50%); z-index: 10; background-color:transparent;
     .menu_area {
-        display: flex; justify-content: space-between; align-items: center; @include vw-pc(width, 1321); @include vw-pc(margin, 0 auto);
+        display: flex; justify-content: space-between;@include vw-pc(width, 1321); @include vw-pc(margin, 0 auto);
         .img_box {@include vw-pc(width, 182);}
-        ul {
-            display: flex; align-items: center; 
-            li {
-                a {display: flex;align-items: center;@include vw-pc(height, 55);@include vw-pc(padding, 0 20); font-weight: 400; @include vw-pc(font-size, 16);}
+        > ul {
+            display: flex;
+            > li {
+                position: relative;
+                > p {
+                    display: flex;align-items: center;justify-content: center;flex-direction: column;@include vw-pc(height, 50);@include vw-pc(padding, 0 40); font-weight: 700; @include vw-pc(font-size, 16); 
+                    
+                    
+                }
+                // 마우스오버 메뉴
+                .sub_menu {
+                    display: flex;flex-direction: column; position: absolute; top: 0; width: 100%;@include vw-pc(padding-top, 50); @include vw-pc(padding-bottom, 10); background-color: rgba(255, 255, 255, 0.3); z-index: -1; @include vw-pc(border-radius, 10); opacity: 0; transition: all 0.3s;
+                    li {
+                        @include vw-pc(padding, 15 0 10);text-align: center;
+                        a {
+                            @include vw-pc(font-size, 16);
+                            &:hover {@include vw-pc(border-bottom, 1 solid #000); }
+                        }
+                    } 
+                }
+                &:hover .sub_menu {opacity: 1;}    
             }
         }
     }
 }
 
-.sec_header ul li a {color: #fff;}
+.sec_header > ul > li a {color: #fff;}
+.main_index  {
+    .sec_gnb {
+        .menu_area {
+            .sub_menu {
+                background-color: rgba(255, 255, 255, 0.8); @include vw-pc(border, 1 solid #ddd);
+                
+            }
+        }
+    }
+}

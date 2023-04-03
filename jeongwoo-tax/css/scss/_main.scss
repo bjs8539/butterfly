@@ -96,7 +96,7 @@
     .sec_kv {
         z-index: 1;
         .title_box {
-            display: flex; justify-content: center;flex-direction: column;@include vw-max(width, 1180);@include vw-max(height, 419);position: absolute; bottom: 0; left: 0;@include vw-max(border-radius, 5 35 35 5); @include vw-max(padding-left, 410);background-color: rgba(255, 255, 255, 0.85); @include vw-max(box-shadow, 6 7 8 #ddd);
+            display: flex; justify-content: center;flex-direction: column;@include vw-max(width, 1180);@include vw-max(height, 419);position: absolute; bottom: 0; left: 0;@include vw-max(border-radius, 5 35 35 5); @include vw-max(padding-left, 410);background-color: rgba(255, 255, 255, 0.85); @include vw-max(box-shadow, 6 7 8 rgba(221, 221, 221, 0.7));
             .main_txt{@include vw-max(margin, 0 0 20); @include vw-max(font-size, 40); @include vw-max(line-height, 56);}
             .sub_txt{@include vw-max(font-size, 22); @include vw-max(line-height, 35);}
         }
@@ -144,7 +144,7 @@
             .contents_area {
                 display: flex; flex-wrap: wrap; justify-content: space-between; @include vw-pc(width, 1015); @include vw-pc(margin-top, 90);
                 .contents_list {
-                    display: flex; align-items: center;justify-content: center; @include vw-pc(width, 500); @include vw-pc(height, 254); @include vw-pc(border-radius, 5); background-color: #fff; @include vw-pc(box-shadow, 1 -2 4 0 #ddd);
+                    display: flex; align-items: center;justify-content: center; @include vw-pc(width, 500); @include vw-pc(height, 254); @include vw-pc(border-radius, 5); background-color: #fff; @include vw-pc(box-shadow, 1 -2 4 0 rgba(221, 221, 221, 0.7));
                     .img_box {@include vw-pc(width, 100);@include vw-pc(margin-right, 47);}
                     .txt_box {
                         .main_txt {@include vw-pc(margin-bottom, 12);@include vw-pc(font-size, 20); @include vw-pc(line-height, 26); font-weight: 700;}
@@ -174,7 +174,7 @@
                     overflow: hidden;@include vw-pc(width, 1485);
                     .swiper-wrapper {@include vw-pc(padding-bottom, 15);}
                     .swiper-slide {
-                        @include vw-pc(width, 345);@include vw-pc(height,551); @include vw-pc(margin-right, 30);background-color: #fff; @include vw-pc(box-shadow, 5 5 11 -3 #888);
+                        @include vw-pc(width, 345);@include vw-pc(height,551); @include vw-pc(margin-right, 30);background-color: #fff; @include vw-pc(box-shadow, 5 5 11 -3 rgba(136, 136, 136, 0.7));
                         .txt_box {
                             @include vw-pc(padding, 13 0 0 37);
                             .name_txt {@include vw-pc(margin-bottom, 9);@include vw-pc(font-size, 14); @include vw-pc(line-height, 24); font-weight: 700; color: #065DE0;}
